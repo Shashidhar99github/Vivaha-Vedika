@@ -135,12 +135,13 @@
 
             if (percent >= 100) {
                 clearInterval(loadingTimer);
-                // Redirect to Home.html after a tiny pause at 100%
+                // Redirect to index.html after a tiny pause at 100%
                 setTimeout(() => {
-                    window.location.href = 'Home.html';
+                    window.location.href = 'index.html';
                 }, 400);
             }
         }, interval);
     </script>
 </body>
 </html>
+

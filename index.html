@@ -237,7 +237,7 @@
     const progressFill = document.getElementById('splash-progress-fill');
     
     // Using sessionStorage so it only shows ONCE per session to prevent annoyance when navigating back to home page.
-    // However, if the user explicitly wants it every single time they go to Home.html, we can remove this check.
+    // However, if the user explicitly wants it every single time they go to index.html, we can remove this check.
     // Given standard web practices, a session check is highly recommended, but we'll run it every time since they asked.
 
     const duration = 2800; 
@@ -274,19 +274,19 @@
   <nav
     class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl border-b border-primary/10 shadow-sm transition-all duration-500 ease-in-out">
     <div class="flex justify-between items-center w-full px-6 md:px-margin-edge max-w-container-max-width mx-auto py-6">
-      <a class="flex items-center gap-[12px] text-primary dark:text-primary-fixed-dim transition-opacity hover:opacity-80" href="Home.html">
+      <a class="flex items-center gap-[12px] text-primary dark:text-primary-fixed-dim transition-opacity hover:opacity-80" href="index.html">
         <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'wght' 200;">diamond</span>
         <span class="font-headline-md text-[20px] tracking-[0.1em] capitalize">Vivaha Vedika</span>
       </a>
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-10">
         <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300"
-          href="Home.html">Home</a>
+          href="index.html">Home</a>
         <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300"
-          href="Home.html#portfolio">Portfolio</a>
+          href="index.html#portfolio">Portfolio</a>
         <div class="relative group py-4">
           <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300 flex items-center gap-1"
-            href="Home.html#services-section">Services <span
+            href="index.html#services-section">Services <span
               class="material-symbols-outlined text-[16px]">expand_more</span></a>
           <div
             class="absolute left-0 top-[100%] w-56 bg-surface dark:bg-surface-dim shadow-xl border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col py-2 z-50">
@@ -315,11 +315,11 @@
           </div>
         </div>
         <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300"
-          href="Home.html#philosophy">Philosophy</a>
+          href="index.html#philosophy">Philosophy</a>
         <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300"
-          href="Home.html#journal">Journal</a>
+          href="index.html#journal">Journal</a>
         <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300"
-          href="Home.html#inquire">Inquire</a>
+          href="index.html#inquire">Inquire</a>
       </div>
       <!-- Book CTA + Hamburger -->
       <div class="flex items-center gap-3">
@@ -348,12 +348,12 @@
         </button>
       </div>
       <nav class="flex flex-col px-8 py-8 gap-5 flex-1 overflow-y-auto">
-        <a href="Home.html"
+        <a href="index.html"
           class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Home</a>
-        <a href="Home.html#portfolio"
+        <a href="index.html#portfolio"
           class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Portfolio</a>
         <div class="flex flex-col border-b border-outline-variant pb-4">
-          <a href="Home.html#services-section"
+          <a href="index.html#services-section"
             class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors mb-4">Services</a>
           <div class="flex flex-col pl-4 gap-3 border-l border-outline-variant/30 ml-2">
             <a href="BrideNalugu.html"
@@ -380,11 +380,11 @@
               class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Birthday</a>
           </div>
         </div>
-        <a href="Home.html#philosophy"
+        <a href="index.html#philosophy"
           class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Philosophy</a>
-        <a href="Home.html#journal"
+        <a href="index.html#journal"
           class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Journal</a>
-        <a href="Home.html#inquire"
+        <a href="index.html#inquire"
           class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors">Inquire</a>
       </nav>
       <div class="px-8 pb-8">
@@ -1033,6 +1033,7 @@
 </body>
 
 </html>
+
 
 
 
