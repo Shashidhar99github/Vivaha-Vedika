@@ -1,0 +1,594 @@
+﻿<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vivaha Vedika | Grand Wedding Receptions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(252, 249, 248, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .gilded-text {
+            background: linear-gradient(to right, #775a19, #e9c176, #775a19);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .masonry-item:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e5e2e1",
+                    "inverse-surface": "#313030",
+                    "surface-tint": "#775a19",
+                    "tertiary": "#745b22",
+                    "on-surface-variant": "#4e4639",
+                    "on-tertiary-fixed": "#261a00",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-tertiary-container": "#4d3700",
+                    "background": "#fcf9f8",
+                    "surface-container": "#f0eded",
+                    "on-secondary-fixed-variant": "#474743",
+                    "secondary-fixed-dim": "#c9c6c2",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed": "#261900",
+                    "tertiary-fixed-dim": "#e4c27e",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#5a430b",
+                    "on-background": "#1c1b1b",
+                    "inverse-primary": "#e9c176",
+                    "on-secondary-container": "#656461",
+                    "secondary-fixed": "#e5e2dd",
+                    "outline-variant": "#d1c5b4",
+                    "surface-container-high": "#eae7e7",
+                    "secondary-container": "#e5e2dd",
+                    "outline": "#7f7667",
+                    "on-surface": "#1c1b1b",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#fcf9f8",
+                    "primary-container": "#c5a059",
+                    "on-primary-container": "#4e3700",
+                    "tertiary-container": "#c0a161",
+                    "on-primary": "#ffffff",
+                    "primary": "#775a19",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#ffdea5",
+                    "on-secondary-fixed": "#1c1c19",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#5f5e5b",
+                    "surface-container-low": "#f6f3f2",
+                    "surface": "#fcf9f8",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#e9c176",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "inverse-on-surface": "#f3f0ef",
+                    "tertiary-fixed": "#ffdf9e",
+                    "surface-dim": "#dcd9d9",
+                    "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "32px",
+                    "container-max-width": "1440px",
+                    "unit": "8px",
+                    "section-padding": "128px",
+                    "margin-edge": "64px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Playfair Display"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-caps": ["Hanken Grotesk"],
+                    "headline-md": ["Playfair Display"],
+                    "display-xl": ["Playfair Display"],
+                    "body-md": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Splash Screen Overlay -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    #splash-screen {
+        position: fixed;
+        inset: 0;
+        z-index: 999999;
+        background-color: #4A3525;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #F5E6D3;
+        transition: opacity 0.8s ease-out;
+    }
+    
+    .splash-logo-container {
+        position: relative;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .splash-drawing-text {
+        font-family: 'Great Vibes', cursive;
+        font-size: 100px;
+        fill: transparent;
+        stroke: #F5E6D3;
+        stroke-width: 2px;
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        animation: draw 2.5s ease-in-out forwards, fillText 0.8s 2s forwards ease-in-out;
+    }
+
+    @media (max-width: 640px) {
+        .splash-drawing-text {
+            font-size: 60px;
+        }
+    }
+
+    @keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes fillText {
+        to {
+            fill: #F5E6D3;
+            stroke-width: 0;
+        }
+    }
+
+    .splash-progress-container {
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .splash-progress-text {
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .splash-progress-bar-bg {
+        width: 100%;
+        height: 2px;
+        background-color: rgba(245, 230, 211, 0.2);
+        position: relative;
+    }
+
+    .splash-progress-bar-fill {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #F5E6D3;
+        width: 0%;
+        transition: width 0.1s linear;
+    }
+</style>
+
+<div id="splash-screen">
+    <div class="splash-logo-container">
+        <svg width="600" height="150" viewBox="0 0 600 150" class="w-full max-w-[600px]">
+            <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" class="splash-drawing-text">Vivaha Vedika</text>
+        </svg>
+    </div>
+    <div class="splash-progress-container">
+        <div class="splash-progress-text" id="splash-progress-text">1%</div>
+        <div class="splash-progress-bar-bg">
+            <div class="splash-progress-bar-fill" id="splash-progress-fill"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Prevent scrolling while loading
+    document.body.style.overflow = 'hidden';
+
+    const splashScreen = document.getElementById('splash-screen');
+    const progressText = document.getElementById('splash-progress-text');
+    const progressFill = document.getElementById('splash-progress-fill');
+
+    const duration = 2800; 
+    const interval = 30; 
+    const steps = duration / interval;
+    let currentStep = 0;
+    
+    const loadingTimer = setInterval(() => {
+        currentStep++;
+        let percent = Math.min(Math.floor((currentStep / steps) * 100), 100);
+        
+        let displayPercent = percent;
+        if (percent > 90) {
+            displayPercent = 90 + Math.floor((percent - 90) * (currentStep % 2));
+            if (percent === 100) displayPercent = 100;
+        }
+
+        progressText.textContent = displayPercent + '%';
+        progressFill.style.width = displayPercent + '%';
+
+        if (percent >= 100) {
+            clearInterval(loadingTimer);
+            setTimeout(() => {
+                splashScreen.style.opacity = '0';
+                splashScreen.style.pointerEvents = 'none';
+                document.body.style.overflow = ''; // restore scrolling
+                setTimeout(() => splashScreen.remove(), 800);
+            }, 400);
+        }
+    }, interval);
+</script>
+<!-- End Splash Screen -->
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl border-b border-primary/10 shadow-sm transition-all duration-500 ease-in-out">
+    <div class="flex justify-between items-center w-full px-6 md:px-margin-edge max-w-container-max-width mx-auto py-6">
+      <a class="flex items-center gap-[12px] text-primary dark:text-primary-fixed-dim transition-opacity hover:opacity-80" href="Home.html">
+        <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'wght' 200;">diamond</span>
+        <span class="font-headline-md text-[20px] tracking-[0.1em] capitalize">Vivaha Vedika</span>
+      </a>
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-10">
+        <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html">Home</a>
+        <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#portfolio">Portfolio</a>
+        <div class="relative group py-4">
+          <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300 flex items-center gap-1" href="Home.html#services-section">Services <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+          <div class="absolute left-0 top-[100%] w-56 bg-surface dark:bg-surface-dim shadow-xl border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col py-2 z-50">
+            <a href="BrideNalugu.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Bride Nalugu</a>
+            <a href="GroomNalugu.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Groom Nalugu</a>
+            <a href="couplehaldi.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Couple Haldi</a>
+            <a href="Mehndi.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Mehendi</a>
+            <a href="sangeeth.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Sangeet</a>
+            <a href="wedding.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Wedding</a>
+            <a href="reception.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Reception</a>
+            <a href="cocktail.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Cocktail Party</a>
+            <a href="Birthday.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Birthday</a>
+          </div>
+        </div>
+        <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#philosophy">Philosophy</a>
+        <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#journal">Journal</a>
+        <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#inquire">Inquire</a>
+      </div>
+      <!-- Book CTA + Hamburger -->
+      <div class="flex items-center gap-3">
+        <button onclick="window.location.href='Consult.html'" class="bg-primary text-on-primary font-label-caps text-label-caps px-8 py-3 tracking-widest hover:bg-primary-container transition-all duration-300 hidden md:block">Book a Consult</button>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-full hover:bg-primary/10 transition-colors" aria-label="Open menu">
+          <span class="material-symbols-outlined text-primary text-2xl">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="fixed inset-0 z-[200] pointer-events-none">
+    <div id="mobile-menu-backdrop" class="absolute inset-0 bg-inverse-surface/60 opacity-0 transition-opacity duration-300 pointer-events-none"></div>
+    <div id="mobile-menu-drawer" class="absolute top-0 right-0 h-full w-72 bg-surface shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+      <div class="flex items-center justify-between px-8 py-6 border-b border-outline-variant">
+        <span class="font-headline-md text-primary tracking-[0.2em] uppercase text-sm">Menu</span>
+        <button id="mobile-menu-close" class="rounded-full p-2 hover:bg-surface-variant transition-colors" aria-label="Close menu">
+          <span class="material-symbols-outlined text-on-surface">close</span>
+        </button>
+      </div>
+      <nav class="flex flex-col px-8 py-8 gap-5 flex-1 overflow-y-auto">
+        <a href="Home.html" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Home</a>
+        <a href="Home.html#portfolio" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Portfolio</a>
+        <div class="flex flex-col border-b border-outline-variant pb-4">
+          <a href="Home.html#services-section" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors mb-4">Services</a>
+          <div class="flex flex-col pl-4 gap-3 border-l border-outline-variant/30 ml-2">
+            <a href="BrideNalugu.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Bride Nalugu</a>
+            <a href="GroomNalugu.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Groom Nalugu</a>
+            <a href="couplehaldi.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Couple Haldi</a>
+            <a href="Mehndi.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Mehendi</a>
+            <a href="sangeeth.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Sangeet</a>
+            <a href="wedding.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Wedding</a>
+            <a href="reception.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Reception</a>
+            <a href="cocktail.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Cocktail Party</a>
+            <a href="Birthday.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Birthday</a>
+          </div>
+        </div>
+        <a href="Home.html#philosophy" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Philosophy</a>
+        <a href="Home.html#journal" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Journal</a>
+        <a href="Home.html#inquire" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors">Inquire</a>
+      </nav>
+      <div class="px-8 pb-8">
+        <button onclick="window.location.href='Consult.html'" class="w-full bg-primary text-on-primary font-label-caps text-label-caps tracking-widest uppercase px-8 py-4 hover:bg-primary-container transition-colors duration-300">Book a Consult</button>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function() {
+    var menu = document.getElementById('mobile-menu');
+    var backdrop = document.getElementById('mobile-menu-backdrop');
+    var drawer = document.getElementById('mobile-menu-drawer');
+    var closeBtn = document.getElementById('mobile-menu-close');
+    var menuBtn = document.getElementById('mobile-menu-btn');
+    function openMenu() {
+      menu.classList.remove('pointer-events-none');
+      backdrop.classList.remove('opacity-0','pointer-events-none');
+      backdrop.classList.add('opacity-100','pointer-events-auto');
+      drawer.classList.remove('translate-x-full');
+      drawer.classList.add('translate-x-0');
+    }
+    function closeMenu() {
+      backdrop.classList.remove('opacity-100','pointer-events-auto');
+      backdrop.classList.add('opacity-0','pointer-events-none');
+      drawer.classList.remove('translate-x-0');
+      drawer.classList.add('translate-x-full');
+      setTimeout(function(){ menu.classList.add('pointer-events-none'); }, 300);
+    }
+    if (menuBtn) menuBtn.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (backdrop) backdrop.addEventListener('click', closeMenu);
+  })();
+  </script>
+
+<!-- Hero Section -->
+<header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover scale-105" data-alt="A grand luxury wedding reception hall at night with a cinematic atmosphere. Thousands of warm glowing crystal chandeliers hang from a dark ceiling, casting golden light over an expansive dance floor. Huge floral arrangements of white and blush roses line the perimeter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8ycLQEqM3NpJXS5Q56FBjFpDeyyREq3cz4o7G9whkop7mk9Fn46JTvR_AjwUHCZCZKmYK7Ab8j1kO0AazSEjwx6seypEafwCmfSvzJt63yFdhy_XLjYrR702A1p81B0qxF9W5kRQE9HMZ8EicmdQbMWgKIvXuyV-g0croV7XoSEROb3W76ndIOi8ygRGaBOkMF6EuahkzQysJhqclQO2s-OMeWqbkVkstVugQVR8uyQQDpwHicB2ioECFGZtFJXiwf0y7u7y-zutM"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-background"></div>
+</div>
+<div class="relative z-10 text-center px-6 md:px-margin-edge max-w-5xl">
+<span class="font-label-caps text-label-caps text-primary-fixed uppercase tracking-[0.6em] mb-6 block animate-pulse">An Evening of Elegance &amp; Celebration</span>
+<h1 class="font-display-xl text-headline-md md:text-headline-lg md:text-display-xl text-white mb-10 leading-tight">Grand Wedding Receptions Designed With Glamour &amp; Luxury</h1>
+<div class="flex flex-col sm:flex-row gap-gutter justify-center mt-12">
+<button class="bg-primary text-on-primary px-12 py-5 font-label-caps text-label-caps hover:bg-primary-container hover:shadow-2xl hover:shadow-primary/30 transition-all duration-500 flex items-center gap-3 rounded-lg border border-transparent">
+                Plan Your Reception Event
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="border border-white/40 text-white px-12 py-5 font-label-caps text-label-caps backdrop-blur-sm hover:bg-white hover:text-black transition-all duration-500 rounded-lg">
+                Explore Reception Gallery
+            </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/50 animate-bounce cursor-pointer">
+<span class="material-symbols-outlined text-4xl">keyboard_double_arrow_down</span>
+</div>
+</header>
+<!-- Content Narrative & Overlapping Visuals -->
+<section class="py-16 md:py-section-padding px-6 md:px-margin-edge max-w-container-max-width mx-auto overflow-visible">
+<div class="grid grid-cols-12 gap-gutter items-center">
+<div class="col-span-12 lg:col-span-5 z-30">
+<div class="space-y-10">
+<div class="flex items-center gap-4">
+<div class="w-12 h-px bg-primary"></div>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">The Artistic Vision</span>
+</div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface leading-snug">The Art of the Evening</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg leading-relaxed">
+                    Beyond the vows lies the celebrationâ€”a curated symphony of light, texture, and emotion. Our receptions are designed as cinematic experiences, where grand couple stage moments meet the delicate intimacy of world-class fine dining. 
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant/80 max-w-lg italic">
+                    "We blend high-production lighting with bespoke floral architecture to create an environment that feels both royal and profoundly personal. Every spotlight, every centerpiece, and every note is choreographed to honor your legacy."
+                </p>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 font-label-caps text-primary hover:gap-4 transition-all duration-300" href="#">
+                        LEARN ABOUT OUR PROCESS <span class="material-symbols-outlined text-sm">east</span>
+</a>
+</div>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-7 relative h-[800px] mt-24 lg:mt-0">
+<!-- Asymmetric "Staggered" Images with dynamic shadows -->
+<div class="absolute top-0 right-0 w-3/4 h-[550px] shadow-[40px_40px_80px_-15px_rgba(0,0,0,0.2)] z-10 overflow-hidden rounded-lg group">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="A luxury wedding reception stage featuring a massive wall of white hydrangeas and blush roses." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFR5iZfVsYcbz3uw2BXctNk1voYD9Hhjc1DmPH5UN6GB8msdhDTwFnwak3rXn2LMChpZkqo9joejSF9SnUTInE1Ine-aBiD_6Vq_4QbrAuVoc1rsqwAdIA7udvoYWkSybQmj3ONPIyqhoUO_LV2P-eG1puqbfWnbF8Gm_rtrKRu-Dk-_Dww74Au_HjSOp8bsEZCnMnJoP6X9MNtw6sTfEvsSCahnqxvogQd52OB7ifBazqtkruoBA9K-4Wp7rNB0-4Os9xPPeRpQMy"/>
+</div>
+<div class="absolute -bottom-10 left-0 w-[55%] h-[400px] shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] z-20 border-[16px] border-background overflow-hidden rounded-lg group">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Intimate detail shot of a luxury wedding reception dinner table with crystal candelabras." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaEVRZY5OVj39yRCNsxnZCRhRdqsRQQLgdkqyAvR69QEc5yTkNUok3r33hGIfPOJlzZEXPnKqX7beQMiwhEkOU2W8OQVZvxARqUK8sxQdYnpfDFMm5KexJtEDYidTR4KWneQKy8bsnNyA79KQlPvIDe2tcjmGewzjtYOLhc6kERXY9DAJkgWb4weMqNV2lioddLR3GHlTZRq4aercjLAndDpOqy6usOSGyaWLwU4n1iS5lTU71ngh3QiEJ-J783P2lm8_NTz7jeB7T"/>
+</div>
+<!-- Decorative Light Element -->
+<div class="absolute top-1/2 left-1/4 w-96 h-96 bg-primary-fixed/30 blur-[120px] -z-10 rounded-full"></div>
+</div>
+</div>
+</section>
+<!-- Services Grid / Bento Style -->
+<section class="bg-surface-container-low py-16 md:py-section-padding">
+<div class="px-6 md:px-margin-edge max-w-container-max-width mx-auto">
+<div class="text-center mb-24">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.4em] uppercase mb-4 block">The Pillars of Luxury</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface">Curated Reception Features</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto mt-6 font-body-md">Refining every detail of your evening to ensure a seamless transition from the ceremony to a night of royal celebration.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Service Cards -->
+<div class="glass-panel p-10 rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-all duration-500 group hover:-translate-y-2 bg-white/40">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 block group-hover:scale-110 transition-transform duration-500">architecture</span>
+<h3 class="font-headline-md text-2xl mb-4 text-on-surface">Luxury Reception Stage Design</h3>
+<p class="font-body-md text-on-surface-variant/90 leading-relaxed">Monolithic floral walls and bespoke architectural backdrops tailored to your royal aesthetic.</p>
+</div>
+<div class="glass-panel p-10 rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-all duration-500 group hover:-translate-y-2 bg-white/40">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 block group-hover:scale-110 transition-transform duration-500">filter_vintage</span>
+<h3 class="font-headline-md text-2xl mb-4 text-on-surface">Crystal &amp; Floral Decor Styling</h3>
+<p class="font-body-md text-on-surface-variant/90 leading-relaxed">Hand-selected blooms from international growers paired with precision-cut crystal accents.</p>
+</div>
+<div class="glass-panel p-10 rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-all duration-500 group hover:-translate-y-2 bg-white/40">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 block group-hover:scale-110 transition-transform duration-500">celebration</span>
+<h3 class="font-headline-md text-2xl mb-4 text-on-surface">Grand Couple Entry Concepts</h3>
+<p class="font-body-md text-on-surface-variant/90 leading-relaxed">Cinematic reveals involving cold pyrotechnics, floral showers, and bespoke lighting choreography.</p>
+</div>
+<div class="glass-panel p-10 rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-all duration-500 group hover:-translate-y-2 bg-white/40">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 block group-hover:scale-110 transition-transform duration-500">lightbulb</span>
+<h3 class="font-headline-md text-2xl mb-4 text-on-surface">Premium Lighting Experience</h3>
+<p class="font-body-md text-on-surface-variant/90 leading-relaxed">Atmospheric layering including pin-spotting, ambient washes, and intelligent motion lighting.</p>
+</div>
+<div class="glass-panel p-10 rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-all duration-500 group hover:-translate-y-2 bg-white/40">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 block group-hover:scale-110 transition-transform duration-500">music_note</span>
+<h3 class="font-headline-md text-2xl mb-4 text-on-surface">Entertainment &amp; Music Setup</h3>
+<p class="font-body-md text-on-surface-variant/90 leading-relaxed">World-class acoustic engineering for live orchestras or high-fidelity sound for global DJs.</p>
+</div>
+<div class="glass-panel p-10 rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-all duration-500 group hover:-translate-y-2 bg-white/40">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 block group-hover:scale-110 transition-transform duration-500">event_seat</span>
+<h3 class="font-headline-md text-2xl mb-4 text-on-surface">Guest Seating Experience</h3>
+<p class="font-body-md text-on-surface-variant/90 leading-relaxed">Ergonomic luxury seating plans that balance visual grandeur with social intimacy.</p>
+</div>
+<div class="glass-panel p-10 rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-all duration-500 group hover:-translate-y-2 bg-white/40">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 block group-hover:scale-110 transition-transform duration-500">restaurant</span>
+<h3 class="font-headline-md text-2xl mb-4 text-on-surface">Fine Dining Arrangements</h3>
+<p class="font-body-md text-on-surface-variant/90 leading-relaxed">Masterfully curated menus served in an environment of white-glove service excellence.</p>
+</div>
+<div class="glass-panel p-10 rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-all duration-500 group hover:-translate-y-2 bg-white/40">
+<span class="material-symbols-outlined text-primary text-5xl mb-8 block group-hover:scale-110 transition-transform duration-500">videocam</span>
+<h3 class="font-headline-md text-2xl mb-4 text-on-surface">Cinematic Photography &amp; Videography</h3>
+<p class="font-body-md text-on-surface-variant/90 leading-relaxed">Multi-cam 4K coverage capturing every glance and every grand gesture in editorial style.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Cinematic Gallery -->
+<section class="py-16 md:py-section-padding px-6 md:px-margin-edge max-w-container-max-width mx-auto">
+<div class="flex justify-between items-end mb-20">
+<div>
+<span class="font-label-caps text-label-caps text-primary tracking-[0.4em] uppercase mb-4 block">Visual Narratives</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg">The Gallery of Heirlooms</h2>
+</div>
+<a class="hidden md:flex items-center gap-3 font-label-caps text-label-caps text-primary hover:gap-6 transition-all duration-500" href="#">
+            VIEW ALL WEDDINGS <span class="material-symbols-outlined">east</span>
+</a>
+</div>
+<!-- Masonry Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-8">
+<div class="relative overflow-hidden group rounded-lg shadow-2xl masonry-item">
+<img class="w-full h-[500px] object-cover transition-transform duration-[1.5s] ease-out" data-alt="A cinematic capture of a bride and groom during their first dance on a fog-filled dance floor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH5IgzobCs_KeaVIGiFBlIpXkxZgqlfBt8Uuw5IKUWebuh143Dn1ecSw2kY2ZbDuGD96nt9ZygZd3u44H_tIaGUtMdnva6Wr_BTTnP8YnJaDAR5tj5bgmok19KGhsB7rB5ri36ftA2LqEMyNY6qmMuNEh22VVV4PT5F4MnbwymjDF89Sc60Usy8Tu938oMQpERuoz0EffO1wQMRHRi6KivBSzpA3RbU48hg9ab5mjR-J8vPWPCurkwAXEtqa77fn-OyLQBkFECwqYn"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col items-center justify-center p-8 text-center backdrop-blur-sm">
+<span class="text-white/60 font-label-caps tracking-widest text-xs mb-2">CHAPTER ONE</span>
+<h4 class="text-white font-headline-md text-xl mb-4">Spotlight Moments</h4>
+<div class="w-10 h-px bg-primary"></div>
+</div>
+</div>
+<div class="relative overflow-hidden group rounded-lg shadow-2xl masonry-item">
+<img class="w-full h-[350px] object-cover transition-transform duration-[1.5s] ease-out" data-alt="Close-up of a premium wedding reception centerpiece." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlsowcghQku4BW1Tg1kufxKezkltwwJ0GOmSAiY4Mkk5R-BRbiB1D4PVgaOQtxOCqfoSkdZJRooHUk70BdpVLGPwRkMdXGF8p8O2zxWjkH3sHyTi-5A3u8DClUym9sdI-7zYTgTJLdHhUhC3NJG-x846bf39gGzvqH_G1vmN4WMIeqBKf0Vx7WeJ6AMKOp3WLpeiU8x62ISbO6Z3I_reK9u-cjqbIG6295OQpb6NW9sC7R8J7_34n_xdxf4OF4Hqv9aOLHzM1dwMG"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col items-center justify-center p-8 text-center backdrop-blur-sm">
+<h4 class="text-white font-headline-md text-xl">The Details</h4>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-8">
+<div class="relative overflow-hidden group rounded-lg shadow-2xl masonry-item h-full">
+<img class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out" data-alt="A breathtaking view of an entire wedding reception ballroom from a high angle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ9ZzW08oQUJp1uyUq8uZ0bvVTxNYnacgQNMcgCV0sEQnL3dHd0xrNgOLKiRNPtsFKWRcgqUSsuS0J-G51yLH1CPE7Zlo_I_Nsjs3cYyZeSipcDM_JSjR-IkxaIzPzKEtqYOChwNeH0eVxca8ICc-A_O8pWlEPlvPWEQtPeealJELF_2piYTVHytUTi_knmtoDinx1nMk_GyEIEceNcqzkreVsZCnJFfFjXWULMkTgfwVr5qQA-xa-V_ya-e-q9hgPITxQS0H_7deJ"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col items-center justify-center p-8 text-center backdrop-blur-sm">
+<span class="text-white/60 font-label-caps tracking-widest text-xs mb-2">PANORAMIC</span>
+<h4 class="text-white font-headline-md text-2xl mb-4">The Grand Ballroom</h4>
+<div class="w-10 h-px bg-primary"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-8">
+<div class="relative overflow-hidden group rounded-lg shadow-2xl masonry-item">
+<img class="w-full h-[400px] object-cover transition-transform duration-[1.5s] ease-out" data-alt="An elegant black-tie reception detail showing a waiter pouring champagne into a tower of crystal glasses." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPjiL-rxOaziD5B922BFDvfAcJNBfLQJeeOogxOBrjxUgVAGcU0yM94qTePYMzlBnd4phUyq5AyIMevRAv_ugpaoTnAuFj4dlJ5RPDnkgzUVwM4kOaY7MKRUamzOqdOGzypuP27Y9vc50q7LaaGC6rmiJohT-v4ht4mN1rTPm8VirfzhJnh3RDn--pPsNh0LycK957_vNBdpt6fmVq3NIXfkE122jdsnRrHA2QHYwyeEzbG-Rzpu0dRoFPpD25TK4-6YJFtXBc6JpL"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col items-center justify-center p-8 text-center backdrop-blur-sm">
+<h4 class="text-white font-headline-md text-xl">Service Excellence</h4>
+</div>
+</div>
+<div class="relative overflow-hidden group rounded-lg shadow-2xl masonry-item">
+<img class="w-full h-[450px] object-cover transition-transform duration-[1.5s] ease-out" data-alt="A luxurious reception lounge area for wedding guests." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJel1u9K9Qabi2Ce4ftRnuU90u-RzJinx0KyvJQnMcbsn0KMgsrJhR7QRMbKU1VmJ7xMHCU5Xf8SnQY9etAjVtukzWt7EGBpG-usyLpv7b4zBufyDpM5Lt6b_r9CtQaJ47lBAKHwBiKRF_jTnKz9oYJtmTkcS0R24yk58y1_sEVEjWEl_xXzeVna3Ice6yrKjwIIqqxLBeI8AEYARKNgEpihGXRXKioQiyqEI5YPAmmPIJ3PvycLTHeyk8bGNy9iWYOvAbSwtwhUDz"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex flex-col items-center justify-center p-8 text-center backdrop-blur-sm">
+<h4 class="text-white font-headline-md text-xl">Guest Lounges</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gilded Divider -->
+<div class="flex items-center justify-center py-16 md:py-section-padding px-6 md:px-margin-edge overflow-hidden">
+<div class="w-full max-w-2xl h-px bg-outline-variant/30 relative">
+<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-background px-8">
+<div class="w-16 h-16 rounded-full border border-primary/40 flex items-center justify-center shadow-sm">
+<span class="text-primary font-headline-md text-xl tracking-widest">YP</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Final Call to Action -->
+<section class="bg-surface-container-highest py-16 md:py-section-padding relative overflow-hidden">
+<!-- Floating light effects -->
+<div class="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[140px] -mr-40 -mt-40"></div>
+<div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[100px] -ml-20 -mb-20"></div>
+<div class="px-6 md:px-margin-edge max-w-4xl mx-auto text-center relative z-10">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.4em] uppercase mb-8 block">Your Journey Begins Here</span>
+<h2 class="font-display-xl text-headline-md md:text-headline-lg md:text-headline-md md:text-headline-lg md:text-display-xl mb-10 leading-tight">Begin Your Cinematic Journey</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-16 leading-relaxed">
+            Allow us to transform your vision into a grand reality. Contact our senior planning team for a private consultation and discover the Vivaha Vedika difference.
+        </p>
+<div class="flex flex-col sm:flex-row gap-8 justify-center">
+<button class="bg-primary text-on-primary px-14 py-6 font-label-caps text-label-caps hover:bg-primary-container hover:shadow-2xl hover:shadow-primary/40 transition-all duration-500 rounded-lg transform hover:-translate-y-1">
+                Book Your Consult
+            </button>
+<button class="border border-primary text-primary px-14 py-6 font-label-caps text-label-caps hover:bg-primary hover:text-on-primary transition-all duration-500 rounded-lg transform hover:-translate-y-1">
+                Request Pricing Brochure
+            </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-lowest w-full py-24 border-t border-outline-variant/10">
+<div class="px-6 md:px-margin-edge max-w-container-max-width mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="text-center md:text-left">
+<div class="font-headline-md text-3xl text-primary mb-2 tracking-[0.1em] uppercase">Vivaha Vedika</div>
+<p class="text-on-surface-variant/60 font-body-md">The Cinematic Heirloom of Luxury Weddings.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-caps text-sm tracking-widest" href="#">INSTAGRAM</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-caps text-sm tracking-widest" href="#">PINTEREST</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-caps text-sm tracking-widest" href="#">JOURNAL</a>
+</div>
+<div class="text-center md:text-right">
+<div class="text-primary/70 font-body-md text-sm mb-4">
+                    Â© 2024 Vivaha Vedika. All Rights Reserved.
+                </div>
+<div class="flex gap-6 justify-center md:justify-end">
+<a class="text-on-surface-variant/50 hover:text-primary text-xs transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant/50 hover:text-primary text-xs transition-colors duration-300" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+</body></html>
+
+
+
+
+
+
+
+
+
+

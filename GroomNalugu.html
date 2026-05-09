@@ -1,0 +1,555 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vivaha Vedika | Groom Nalugu Ceremonies</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&amp;family=Hanken+Grotesk:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#e5e2dd",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#e5e2dd",
+                        "inverse-surface": "#313030",
+                        "secondary-fixed-dim": "#c9c6c2",
+                        "primary-fixed": "#ffdea5",
+                        "inverse-primary": "#e9c176",
+                        "error": "#ba1a1a",
+                        "surface-container": "#f0eded",
+                        "on-secondary-fixed-variant": "#474743",
+                        "on-background": "#1c1b1b",
+                        "tertiary-fixed-dim": "#e4c27e",
+                        "primary-fixed-dim": "#e9c176",
+                        "on-surface": "#1c1b1b",
+                        "tertiary": "#745b22",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#4e4639",
+                        "surface-bright": "#fcf9f8",
+                        "primary": "#775a19",
+                        "surface-variant": "#e5e2e1",
+                        "tertiary-container": "#c0a161",
+                        "tertiary-fixed": "#ffdf9e",
+                        "on-primary-fixed": "#261900",
+                        "surface-dim": "#dcd9d9",
+                        "on-tertiary-container": "#4d3700",
+                        "on-primary-container": "#4e3700",
+                        "surface-container-highest": "#e5e2e1",
+                        "outline-variant": "#d1c5b4",
+                        "surface-container-high": "#eae7e7",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#5f5e5b",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#c5a059",
+                        "surface-container-low": "#f6f3f2",
+                        "on-primary": "#ffffff",
+                        "background": "#fcf9f8",
+                        "outline": "#7f7667",
+                        "on-secondary-fixed": "#1c1c19",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-tint": "#775a19",
+                        "on-tertiary-fixed": "#261a00",
+                        "on-tertiary-fixed-variant": "#5a430b",
+                        "on-error": "#ffffff",
+                        "surface": "#fcf9f8",
+                        "on-secondary-container": "#656461"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max-width": "1440px",
+                        "margin-edge": "64px",
+                        "gutter": "32px",
+                        "unit": "8px",
+                        "section-padding": "128px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "display-xl": ["Playfair Display"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(252, 249, 248, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Splash Screen Overlay -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    #splash-screen {
+        position: fixed;
+        inset: 0;
+        z-index: 999999;
+        background-color: #4A3525;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #F5E6D3;
+        transition: opacity 0.8s ease-out;
+    }
+    
+    .splash-logo-container {
+        position: relative;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .splash-drawing-text {
+        font-family: 'Great Vibes', cursive;
+        font-size: 100px;
+        fill: transparent;
+        stroke: #F5E6D3;
+        stroke-width: 2px;
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        animation: draw 2.5s ease-in-out forwards, fillText 0.8s 2s forwards ease-in-out;
+    }
+
+    @media (max-width: 640px) {
+        .splash-drawing-text {
+            font-size: 60px;
+        }
+    }
+
+    @keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes fillText {
+        to {
+            fill: #F5E6D3;
+            stroke-width: 0;
+        }
+    }
+
+    .splash-progress-container {
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .splash-progress-text {
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .splash-progress-bar-bg {
+        width: 100%;
+        height: 2px;
+        background-color: rgba(245, 230, 211, 0.2);
+        position: relative;
+    }
+
+    .splash-progress-bar-fill {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #F5E6D3;
+        width: 0%;
+        transition: width 0.1s linear;
+    }
+</style>
+
+<div id="splash-screen">
+    <div class="splash-logo-container">
+        <svg width="600" height="150" viewBox="0 0 600 150" class="w-full max-w-[600px]">
+            <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" class="splash-drawing-text">Vivaha Vedika</text>
+        </svg>
+    </div>
+    <div class="splash-progress-container">
+        <div class="splash-progress-text" id="splash-progress-text">1%</div>
+        <div class="splash-progress-bar-bg">
+            <div class="splash-progress-bar-fill" id="splash-progress-fill"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Prevent scrolling while loading
+    document.body.style.overflow = 'hidden';
+
+    const splashScreen = document.getElementById('splash-screen');
+    const progressText = document.getElementById('splash-progress-text');
+    const progressFill = document.getElementById('splash-progress-fill');
+
+    const duration = 2800; 
+    const interval = 30; 
+    const steps = duration / interval;
+    let currentStep = 0;
+    
+    const loadingTimer = setInterval(() => {
+        currentStep++;
+        let percent = Math.min(Math.floor((currentStep / steps) * 100), 100);
+        
+        let displayPercent = percent;
+        if (percent > 90) {
+            displayPercent = 90 + Math.floor((percent - 90) * (currentStep % 2));
+            if (percent === 100) displayPercent = 100;
+        }
+
+        progressText.textContent = displayPercent + '%';
+        progressFill.style.width = displayPercent + '%';
+
+        if (percent >= 100) {
+            clearInterval(loadingTimer);
+            setTimeout(() => {
+                splashScreen.style.opacity = '0';
+                splashScreen.style.pointerEvents = 'none';
+                document.body.style.overflow = ''; // restore scrolling
+                setTimeout(() => splashScreen.remove(), 800);
+            }, 400);
+        }
+    }, interval);
+</script>
+<!-- End Splash Screen -->
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl border-b border-primary/10 shadow-sm transition-all duration-500 ease-in-out">
+<div class="flex justify-between items-center w-full px-6 md:px-margin-edge max-w-container-max-width mx-auto py-6">
+  <a class="flex items-center gap-[12px] text-primary dark:text-primary-fixed-dim transition-opacity hover:opacity-80" href="Home.html">
+        <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'wght' 200;">diamond</span>
+        <span class="font-headline-md text-[20px] tracking-[0.1em] capitalize">Vivaha Vedika</span>
+      </a>
+  <!-- Desktop Nav -->
+  <div class="hidden md:flex items-center gap-10">
+    <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html">Home</a>
+    <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#portfolio">Portfolio</a>
+    <div class="relative group py-4">
+      <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300 flex items-center gap-1" href="Home.html#services-section">Services <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="absolute left-0 top-[100%] w-56 bg-surface dark:bg-surface-dim shadow-xl border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col py-2 z-50">
+        <a href="BrideNalugu.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Bride Nalugu</a>
+        <a href="GroomNalugu.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Groom Nalugu</a>
+        <a href="couplehaldi.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Couple Haldi</a>
+        <a href="Mehndi.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Mehendi</a>
+        <a href="sangeeth.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Sangeet</a>
+        <a href="wedding.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Wedding</a>
+        <a href="reception.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Reception</a>
+        <a href="cocktail.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Cocktail Party</a>
+        <a href="Birthday.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Birthday</a>
+      </div>
+    </div>
+    <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#philosophy">Philosophy</a>
+    <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#journal">Journal</a>
+    <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#inquire">Inquire</a>
+  </div>
+  <!-- Book CTA + Hamburger -->
+  <div class="flex items-center gap-3">
+    <button onclick="window.location.href='Consult.html'" class="bg-primary text-on-primary font-label-caps text-label-caps px-8 py-3 tracking-widest hover:bg-primary-container transition-all duration-300 hidden md:block">Book a Consult</button>
+    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-full hover:bg-primary/10 transition-colors" aria-label="Open menu">
+      <span class="material-symbols-outlined text-primary text-2xl">menu</span>
+    </button>
+  </div>
+</div>
+</nav>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-[200] pointer-events-none">
+  <div id="mobile-menu-backdrop" class="absolute inset-0 bg-inverse-surface/60 opacity-0 transition-opacity duration-300 pointer-events-none"></div>
+  <div id="mobile-menu-drawer" class="absolute top-0 right-0 h-full w-72 bg-surface shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+    <div class="flex items-center justify-between px-8 py-6 border-b border-outline-variant">
+      <span class="font-headline-md text-primary tracking-[0.2em] uppercase text-sm">Menu</span>
+      <button id="mobile-menu-close" class="rounded-full p-2 hover:bg-surface-variant transition-colors" aria-label="Close menu">
+        <span class="material-symbols-outlined text-on-surface">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col px-8 py-8 gap-5 flex-1 overflow-y-auto">
+      <a href="Home.html" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Home</a>
+      <a href="Home.html#portfolio" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Portfolio</a>
+      <div class="flex flex-col border-b border-outline-variant pb-4">
+        <a href="Home.html#services-section" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors mb-4">Services</a>
+        <div class="flex flex-col pl-4 gap-3 border-l border-outline-variant/30 ml-2">
+          <a href="BrideNalugu.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Bride Nalugu</a>
+          <a href="GroomNalugu.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Groom Nalugu</a>
+          <a href="couplehaldi.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Couple Haldi</a>
+          <a href="Mehndi.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Mehendi</a>
+          <a href="sangeeth.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Sangeet</a>
+          <a href="wedding.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Wedding</a>
+          <a href="reception.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Reception</a>
+          <a href="cocktail.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Cocktail Party</a>
+          <a href="Birthday.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Birthday</a>
+        </div>
+      </div>
+      <a href="Home.html#philosophy" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Philosophy</a>
+      <a href="Home.html#journal" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Journal</a>
+      <a href="Home.html#inquire" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors">Inquire</a>
+    </nav>
+    <div class="px-8 pb-8">
+      <button onclick="window.location.href='Consult.html'" class="w-full bg-primary text-on-primary font-label-caps text-label-caps tracking-widest uppercase px-8 py-4 hover:bg-primary-container transition-colors duration-300">Book a Consult</button>
+    </div>
+  </div>
+</div>
+<script>
+(function() {
+  var menu = document.getElementById('mobile-menu');
+  var backdrop = document.getElementById('mobile-menu-backdrop');
+  var drawer = document.getElementById('mobile-menu-drawer');
+  var closeBtn = document.getElementById('mobile-menu-close');
+  var menuBtn = document.getElementById('mobile-menu-btn');
+  function openMenu() {
+    menu.classList.remove('pointer-events-none');
+    backdrop.classList.remove('opacity-0','pointer-events-none');
+    backdrop.classList.add('opacity-100','pointer-events-auto');
+    drawer.classList.remove('translate-x-full');
+    drawer.classList.add('translate-x-0');
+  }
+  function closeMenu() {
+    backdrop.classList.remove('opacity-100','pointer-events-auto');
+    backdrop.classList.add('opacity-0','pointer-events-none');
+    drawer.classList.remove('translate-x-0');
+    drawer.classList.add('translate-x-full');
+    setTimeout(function(){ menu.classList.add('pointer-events-none'); }, 300);
+  }
+  if (menuBtn) menuBtn.addEventListener('click', openMenu);
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  if (backdrop) backdrop.addEventListener('click', closeMenu);
+})();
+</script>
+
+<main class="pt-[104px]">
+<!-- Hero Section -->
+<section class="relative h-screen min-h-[800px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A cinematic wide-angle shot of a luxury South Indian Nalugu ceremony venue. The space is adorned with heavy garlands of yellow marigolds and white jasmine hanging from ornate wooden arches. Soft golden hour light filters through translucent ivory drapes, creating a warm and ethereal atmosphere. The floor is covered in a intricate carpet of fresh flower petals in shades of turmeric and vermillion." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDradbzSVYM1NLZdbSwPx5kzKEBAAGOI95rRXJXJ49k5l65AnSsHk-AxMmNjexbhqsH8EP9MLGAlhmdOKzWbb7v2HBUiUN2_gBa11A8mANTt6lmf6B_wtsgtyMjZ74SYfJVzVXZnmADsM3c3-8AJeTdzjo_nax3t3zLBsxgyYwcwXJLsjLH3Jdkl2bWUadd2jjvtJ8FenTZSFkYjeVqggRsfmZQS7q5TvFbj__2yF8VKs-kKEOro86ykDCu8puGAshF2u9gqPB2RNjN"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background/60 via-background/20 to-transparent"></div>
+</div>
+<div class="relative z-10 px-6 md:px-margin-edge max-w-container-max-width mx-auto w-full">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.3em] block mb-6">A CELEBRATION OF HERITAGE &amp; BLESSINGS</span>
+<h1 class="font-display-xl text-headline-md md:text-headline-lg md:text-display-xl text-on-surface mb-8">Majestic Groom Nalugu Ceremonies Steeped in Tradition</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 leading-relaxed">
+                        The Groom Nalugu is a powerful rite of passage — a sacred ceremony where the groom is blessed with turmeric, sandalwood, and family prayers. We transform these timeless rituals into grand cinematic experiences that honour South Indian heritage with contemporary elegance.
+                    </p>
+<div class="flex gap-gutter">
+<button class="bg-primary text-on-primary font-label-caps text-label-caps px-10 py-5 hover:bg-primary-container transition-colors duration-500 shadow-lg">PLAN YOUR CEREMONY</button>
+<button class="border border-primary text-primary font-label-caps text-label-caps px-10 py-5 hover:bg-primary/5 transition-colors duration-500">EXPLORE PORTFOLIO</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Bento Grid -->
+<section class="py-16 md:py-section-padding px-6 md:px-margin-edge max-w-container-max-width mx-auto">
+<div class="text-center mb-24">
+<div class="w-16 h-[1px] bg-primary/30 mx-auto mb-8"></div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg mb-4">The Elements of Elegance</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Every detail is choreographed to reflect your heritage through a lens of contemporary luxury.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto md:h-[1200px]">
+<!-- Main Card -->
+<div class="md:col-span-8 md:row-span-2 group relative overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An exquisite high-fidelity close-up of a South Indian bride's hands and face being gently smeared with golden turmeric paste during a Nalugu ritual. She is wearing traditional gold jewelry and a white silk sari with a thick gold border. The background is a soft blur of yellow marigolds, creating a warm, golden monochromatic aesthetic with high-end editorial lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYsnKW88WeqqmJJpLnF1uCthxSh6sUKWbSuO6KoL_arSiTAbmqiADvAZD_8Ud7toCTETuX50XrYExI4OWLl6jPdVoFSw025fG4tE68us64b8E3q6eh0VBHB82vmqEad0WiW4F0Nq74hAMHTOJceSE1RsrSaiM6LNYfhI-NjhxjI5DWcdDQAdJbyGTeQBNj7WY2zkLDdBnzw9fp9fc1IpdAhEWIa3gUwR2R8wbvmwCKRt9E6X2NafPV9ycCbcHHgz3NKmFLgAqHSi4i"/>
+<div class="absolute bottom-0 left-0 p-12 w-full bg-gradient-to-t from-black/60 to-transparent">
+<span class="font-label-caps text-label-caps text-primary-fixed mb-4 block">CORE SERVICE</span>
+<h3 class="font-headline-md text-headline-md text-white mb-2">Traditional Floral Decor</h3>
+<p class="text-white/80 font-body-md max-w-lg">Bespoke installations of temple-grade jasmine and marigolds designed to frame the sacredness of the ritual.</p>
+</div>
+</div>
+<!-- Secondary Cards -->
+<div class="md:col-span-4 group relative overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A beautifully arranged turmeric ceremony setup on a low wooden platform. Brass bowls filled with yellow paste, fresh hibiscus flowers, and aromatic sandalwood are positioned amidst a pattern of yellow and orange petals. The setting is bright and clean, emphasizing a luxury minimalist interpretation of traditional South Indian ritual items." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChhSyeuH80bGMi8BvIGeEvrPmtRg80JWprpmOqFZX2-6UDLF95sQQgVvAl6M8DKXdSNOTBOE3JmBS_qjVk6aoPdbQpjZaNkhYblhIsAhZcRx7_1be3qS2WDTcW-hTObsm_S435i2VjcsYowKGUyKZ8iofrLjvQJG27S5ZYXxY21h9IqY7pG0NjJym8xhUEgB2R8hW6xsj_HjeFOeglGBL4ZwrK7bYOtpfpEZ1KGRp5Fxf8NLp87SvxRCJFyc0p6luGWOAHkjF5ZPIR"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300 flex items-end p-8">
+<h3 class="font-headline-md text-headline-md text-white">Turmeric Setup</h3>
+</div>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden bg-surface-container-low">
+<div class="p-12 h-full flex flex-col justify-center border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-5xl mb-6" style="font-variation-settings: 'FILL' 0;">spa</span>
+<h3 class="font-headline-md text-headline-md mb-4">Floral Jewelry</h3>
+<p class="font-body-md text-on-surface-variant">Custom handcrafted jewelry made from fresh, fragrant buds designed specifically for the Nalugu aesthetic.</p>
+</div>
+</div>
+<!-- Bottom Row -->
+<div class="md:col-span-4 group relative overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An artistic composition showing a South Indian woman in a bright silk sari playing a traditional acoustic instrument, like a Veena or Sitar, in a luxury heritage setting. The mood is serene and sophisticated, highlighting the 'Acoustic Soul' aspect of the wedding event with soft sunlight hitting the polished wood of the instrument." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbDQdtxJujWl4xLkgq3bCKGgm09eiYW9Olbb_G_Arh0ATeVShQPvCsw66CBQozWWGtbYbaLz_gp_o31q5PMXCj_h15Y1l6QaHAwatV_IJQNhBe4uDBAuYak0b4s-m_ELi9vO0-KUYLblM9CorSFuiO0fx9vUMNP5zP7U8n7RdRd2ED4-QCTutEh9Tgv9rvBG0NmXrTaNK9E1KyHq8wEv0fDwJZg9qRWhgkWCWD_HQeHxOvV2k9RwzRRbOyT4DfQiJ_QfXWXGjzywFB"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+<span class="font-label-caps text-label-caps text-white border border-white px-6 py-3">ACOUSTIC SOUL</span>
+</div>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A candid, high-end photography shot of a family group laughing together during a wedding celebration. The image captures authentic joy and emotion in a bright, airy setting. The color palette is composed of soft creams, golds, and vibrant silks, reflecting a premium cinematic wedding style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLtHezKsXpT4HL8NEnnlMeqgF6tl7ERcYsnK7wOF4aO9AKzcMexmyWOfBfxVnzpSugIvNOofyWfkPHD6mB-pVtm50aISY_FamSgq0VkJA2yyWtbvmRMxNpyOIn3zXrsXNTxO_oiBirH0Uy6yNsVAW1oldvAQ_ujs2do_pyu-fggqojNlw4iIPq027_L_QCbNaFqCmS0agqN0htMm0ZocFORDvbLP2TbWZMSmNVqpPnzHH7Q_PCahPGmcvHF7zB9wUrcdlufHqbFV6J"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-500 flex flex-col justify-end p-8 text-white">
+<h3 class="font-headline-md text-headline-md mb-2">Candid Art</h3>
+<p class="font-body-md">Capturing the unscripted laughter and intimate blessings.</p>
+</div>
+</div>
+<div class="md:col-span-4 flex items-center justify-center bg-primary text-on-primary p-12">
+<div class="text-center">
+<h3 class="font-headline-md text-headline-md mb-6">Experience the Legacy</h3>
+<p class="font-body-md mb-8 opacity-90">Every Groom Nalugu is a narrative of heritage and honour.</p>
+<a class="inline-block font-label-caps text-label-caps border-b border-on-primary pb-1 hover:opacity-70 transition-opacity" href="#">VIEW ALL SERVICES</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Immersive Narrative Section -->
+<section class="bg-surface-container-lowest py-16 md:py-section-padding">
+<div class="px-6 md:px-margin-edge max-w-container-max-width mx-auto flex flex-col md:flex-row gap-24 items-center">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-12 -left-12 w-48 h-48 border border-primary/20 -z-10"></div>
+<img class="w-full aspect-[4/5] object-cover shadow-2xl" data-alt="A high-fashion bridal portrait in a South Indian temple-style setting. The bride is seated on an ornate silver swing decorated with marigold garlands. The lighting is dramatic, coming from several hanging lanterns that cast a warm, atmospheric glow on the champagne gold silk of her outfit. The overall mood is quiet, deeply emotional, and premium." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgkDF4OWTiA8dZHw0KsKbyca8g1qI53fEUXw4a8y6IlmoEimTved5uWFJbRsKj5t4HJ2xxRGfr1rH3k0zUBFQioC_VILgatgpZTEqL6ZZ2zyeVafdEayZFryNRSHy2e96Dxfi0CULvJ9ptVhfxO145ayjdxUu4D4oQncUDyEDpCURB7UZulvLeGLsBymABVtAhVNKfOBzKYPB5QmdYlTITWeXH1SfkALodklpTO5oT7rCMp6tZl53WrEQEaX6RO0f0x44DIY4Ass2T"/>
+<div class="absolute -bottom-8 -right-8 glass-card p-10 max-w-xs shadow-xl border border-white/40">
+<p class="font-headline-md text-headline-md text-primary mb-2 italic">"A heirloom of emotion."</p>
+<p class="font-body-md text-on-surface-variant">The Gilded Promise</p>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<span class="font-label-caps text-label-caps text-primary tracking-widest block mb-8">THE RITUAL OF LIGHT</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg mb-10">Heritage Rituals &amp; Sacred Blessings</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div>
+<h4 class="font-headline-md text-[24px] mb-2">Artistic Direction</h4>
+<p class="font-body-md text-on-surface-variant">We don't just plan events; we direct cultural narratives that respect the sanctity of tradition while elevating the visual spectacle.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">family_history</span>
+</div>
+<div>
+<h4 class="font-headline-md text-[24px] mb-2">Family Ritual Coordination</h4>
+<p class="font-body-md text-on-surface-variant">Graceful management of multi-generational participation, ensuring every elder's blessing is honored with seamless flow.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">palette</span>
+</div>
+<div>
+<h4 class="font-headline-md text-[24px] mb-2">Gold &amp; Sandalwood Palette</h4>
+<p class="font-body-md text-on-surface-variant">Our signature styling blends the warmth of sandalwood and turmeric with regal gold and ivory tones befitting the groom's ceremony.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Luxury Masonry Gallery -->
+<section class="py-16 md:py-section-padding px-6 md:px-margin-edge max-w-container-max-width mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg mb-4">Groom Nalugu Gallery</h2>
+<p class="font-body-md text-on-surface-variant">Glimpses of golden moments from our recent celebrations.</p>
+</div>
+<a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1" href="#">VIEW ALL CEREMONIES</a>
+</div>
+<div class="columns-1 md:columns-3 gap-8 space-y-8">
+<div class="relative group overflow-hidden">
+<img class="w-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A high-angle artistic shot of a South Indian wedding guest pouring rose petals over the bride's hands. The colors are rich and vibrant, featuring deep reds and oranges. The focus is sharp on the texture of the silk sari and the delicate petals, creating a sensory and tactile feel of the ritual." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_9mzGOwlNkez_UAEYB-IX3NrKKasWE4s95A-mmSSJBcJ0pohN3rkJui2mHYUwUUcaAkDbJdJluLaCZ7pPVzEvlUHh1wZ-Xtom8a3XuMpRc6a2r-FyAjBVjLMHrbvGZ1Xwl305XwaoRPC8On-fjQP0M6C39QTC7-cgeXjSlJYT7r9NHiXCcoUkkoNs2gPEwaPyuyWbN0htKWOj-ImjHuKyumt4ETEnrRz5g_nbUpTz1uM0wJRZIA6j0QBjHyU-YLDU3n6TjEtOnnsn"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+<span class="font-label-caps text-label-caps text-white">THE FLOWER RITUAL</span>
+</div>
+</div>
+<div class="relative group overflow-hidden">
+<img class="w-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A detailed shot of ornate brass lamps (Diyas) and traditional silver bowls used in a South Indian pre-wedding ceremony. The items are arranged on a white marble surface with yellow marigold petals scattered around. The lighting is soft and reflective, emphasizing the premium quality of the ceremonial items." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbJZhtgopzesSB1CmljKKQY83TocSCET5d9IbHLY1a_1I3gvwpWOEQ-1nXf7ecUJOk91A_f5US94NNkQGl3EOIsdzDDtHB0tpp-MckvVJoP9zlxtFoSaAq6o5UDjyicTFRbfrkTuc_audAzC341UDPAijRu-8rJOW_8S3HlxEH_3n-Ch4hVJtGR2V-Y3-KbH9mLpzahppYMvTffun_RHVSRjzeU9CnRcP0sTKjjocpxkqZcCQoLyM9_5ZmuOy1oKU7ZjS7Mc8GTzSi"/>
+</div>
+<div class="relative group overflow-hidden">
+<img class="w-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A portrait of a laughing South Indian bride as she is surrounded by her female cousins during the Nalugu. Her face is lightly touched with turmeric and she glows with joy. The background is a soft-focus garden setting with jasmine drapes. The mood is joyful, intimate, and authentic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb1S__GzvHKpsiHAUKlLSDBF3l5yYmlxC5UxC3uRtiPAlcPj4BYwOzI38gfNLr5v57Y7NwSko6R2DehINLtoL0XC-1Dh7FeKNLGyCDpo9_Y3Fq5tRn4H4HKXsH_cGZL0R8gi_H8xyXH4bB6oa6wE3PhqTHF9vfkyYGH4Jms4w_p8OGgVr4BTCrLOqL2KBaEkAtTrq0EWkAaC2f_oxmZNTh13RFJQocxJg7PgNnHsn4h1_nabMAxnI28-O31Ph42D8CnXj-KXuHw4-o"/>
+</div>
+<div class="relative group overflow-hidden">
+<img class="w-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A close-up of intricate henna (Mehendi) patterns on a bride's hands as she holds a handful of yellow turmeric paste. The image captures the fine details of the art against the vibrant gold of the turmeric. The lighting is bright and warm, emphasizing the textures and colors of the ceremony." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVWE1w811n-R_SSCwEyyLEyr_FRlefhh4PC7TGupWXzO6gGzSf7X4fPzmlTV3Dzc8vAqm06Wdskyd7DvRXl2c65_KrcbsI3vd6lQFSzNNNxRuR685JX8qVBllNm91akzZb0IDA9TvThs-SWKMtRZ9Kb51QeEISc4_XFQwTJPldcrHrCIhWu4YgtCpbyIvwf6jwTpD7-YT6vtq6_zwbIPlgOasQbcYzDFYkJdC8haktrO-rk61fBR6jzJqrt8slyB_ZlFpAiUdmXaqb"/>
+</div>
+<div class="relative group overflow-hidden">
+<img class="w-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A panoramic shot of a luxury garden wedding setup at night. Numerous strings of fairy lights and small lanterns hang from ancient trees. Tables are set with white linen and gold centerpieces. The atmosphere is magical and sophisticated, representing a premium pre-wedding evening celebration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQWE1_FOwsZWTSH-G5Mm3cG-bd23kC__p8FuEul_RQ9r95Fz090WjIm-i1OZHWkfNrHY_fe3_5EP-seW1OOVqd9Er5qBF5iNePZToP4d-SBMPAHx2imQH-GvoZhMHJ7nV--y7CNmzdRAfYRxu1Za90Glh-NfXM1Xhc-APMd8vWI_0wTQTr4alerl-opE9o28T7vcF8NjnW3vS0BHZ8JylUvTtSk6JqFCmIS_-hlqM9rDv3fDYu6DHWKoU9VBZa4G9lUIDAhioTkATJ"/>
+</div>
+<div class="relative group overflow-hidden">
+<img class="w-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An atmospheric wide shot of a traditional South Indian wedding hall. The pillars are wrapped in jasmine and marigolds. Guests are dressed in colorful silk saris and dhotis. The light is soft and diffused, creating a majestic and timeless feeling of a large-scale heritage event." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5xWNYHHjhvEhab1ngRnO1aiboM774I9g0ewG52BKojmIYlHMyjyOkJ-k2PFhEPfhxrPBShh75qfqyLb2e1u_gCXf8qKY4TwKTGCnDcLCfVQfenwI7bDKAhx9FxjUhAAMzJ4KOC9OxYalgOD40krEkBF1_ANMOGkFQ7RBTt6_J44dmhkNeZZDBGfPjtHcJ4ac-aRpYieghclPXmwakXrjnwxXAGEjM0Jh2U21gHpSsoyacNuMqDu4xMV_ABOOOSKg3zgf0G6zn-rza"/>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="bg-primary py-16 md:py-section-padding text-on-primary relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute inset-0" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCkeKb5DrL7kROAD08vF_uwIxyUEilsd8kEc1r6CWYome9Su37RyPboquw6f5kKNPqRtHZPshzS5J14RCx9Q0IOyNKa0zN2yPyyA60y6vR-5vsCo1BG0-RkKpqY2e0BfiD0b80Rzwt6i4QNwOcDFIB5DDRnUf1GXknkXukBsp4_L89Igy1PSZQomcZnf3SZ-IUeeTZsHfVVDBF3SjNS-LQ7j8iYIKVbyibeUKa_9fGL4dixw4Xn4dpsxBfibK679zEQ6IlWgmCkE_N1');"></div>
+</div>
+<div class="relative z-10 px-6 md:px-margin-edge max-w-container-max-width mx-auto text-center">
+<h2 class="font-display-xl text-headline-md md:text-headline-lg md:text-headline-md md:text-headline-lg md:text-display-xl mb-12">Let Us Honour Your Sacred Ritual</h2>
+<p class="font-body-lg text-body-lg mb-16 max-w-2xl mx-auto opacity-90">Begin the groom's journey with a Nalugu ceremony that honours ancestral traditions with cinematic grandeur.</p>
+<div class="flex flex-col md:flex-row justify-center gap-gutter">
+<button class="bg-on-primary text-primary font-label-caps text-label-caps px-12 py-6 hover:bg-secondary-fixed transition-all duration-300">INQUIRE FOR AVAILABILITY</button>
+<button class="border border-on-primary text-on-primary font-label-caps text-label-caps px-12 py-6 hover:bg-white/10 transition-all duration-300">DOWNLOAD BROCHURE</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-lowest w-full py-16 md:py-section-padding border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-margin-edge max-w-container-max-width mx-auto gap-gutter">
+<div class="mb-8 md:mb-0">
+<a class="font-headline-md text-headline-md text-primary tracking-[0.2em] uppercase" href="Home.html">Vivaha Vedika</a>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4">Crafting the cinematic heirloom of your lifetime.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="flex gap-8">
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors duration-200" href="#">Instagram</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors duration-200" href="#">Pinterest</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Â© 2024 Vivaha Vedika. The Cinematic Heirloom.</p>
+</div>
+</div>
+</footer>
+
+
+</body></html>
+
+
+
+
+
+
+
+
+

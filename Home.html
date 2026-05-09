@@ -1,0 +1,1038 @@
+﻿<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Vivaha Vedika | Luxury Wedding &amp; Event Architects</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .glass-card {
+      background: rgba(252, 249, 248, 0.6);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .hero-gradient {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.6) 100%);
+    }
+
+    .parallax-bg {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary-container": "#c5a059",
+            "on-secondary-fixed": "#1c1c19",
+            "inverse-surface": "#313030",
+            "surface-dim": "#dcd9d9",
+            "surface-container-low": "#f6f3f2",
+            "surface": "#fcf9f8",
+            "primary-fixed": "#ffdea5",
+            "outline": "#7f7667",
+            "inverse-primary": "#e9c176",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-fixed-variant": "#474743",
+            "inverse-on-surface": "#f3f0ef",
+            "tertiary-fixed-dim": "#e4c27e",
+            "on-primary-fixed": "#261900",
+            "tertiary": "#745b22",
+            "background": "#fcf9f8",
+            "on-primary-fixed-variant": "#5d4201",
+            "on-background": "#1c1b1b",
+            "tertiary-container": "#c0a161",
+            "surface-container": "#f0eded",
+            "on-tertiary-container": "#4d3700",
+            "surface-container-high": "#eae7e7",
+            "on-tertiary-fixed-variant": "#5a430b",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "secondary-fixed-dim": "#c9c6c2",
+            "on-primary": "#ffffff",
+            "outline-variant": "#d1c5b4",
+            "on-surface-variant": "#4e4639",
+            "primary": "#775a19",
+            "on-tertiary-fixed": "#261a00",
+            "on-surface": "#1c1b1b",
+            "on-tertiary": "#ffffff",
+            "on-primary-container": "#4e3700",
+            "surface-container-highest": "#e5e2e1",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed": "#ffdf9e",
+            "on-error-container": "#93000a",
+            "secondary-container": "#e5e2dd",
+            "error-container": "#ffdad6",
+            "surface-tint": "#775a19",
+            "secondary-fixed": "#e5e2dd",
+            "surface-variant": "#e5e2e1",
+            "on-secondary-container": "#656461",
+            "surface-bright": "#fcf9f8",
+            "secondary": "#5f5e5b",
+            "primary-fixed-dim": "#e9c176"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin-edge": "64px",
+            "gutter": "32px",
+            "section-padding": "128px",
+            "unit": "8px",
+            "container-max-width": "1440px"
+          },
+          "fontFamily": {
+            "display-xl": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "label-caps": ["Hanken Grotesk"],
+            "body-md": ["Hanken Grotesk"],
+            "body-lg": ["Hanken Grotesk"]
+          },
+          "fontSize": {
+            "display-xl": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "500" }],
+            "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "500" }],
+            "label-caps": ["12px", { "lineHeight": "1.4", "letterSpacing": "0.15em", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- Splash Screen Overlay -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    #splash-screen {
+        position: fixed;
+        inset: 0;
+        z-index: 999999;
+        background-color: #4A3525;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #F5E6D3;
+        transition: opacity 0.8s ease-out;
+    }
+    
+    .splash-logo-container {
+        position: relative;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .splash-drawing-text {
+        font-family: 'Great Vibes', cursive;
+        font-size: 100px;
+        fill: transparent;
+        stroke: #F5E6D3;
+        stroke-width: 2px;
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        animation: draw 2.5s ease-in-out forwards, fillText 0.8s 2s forwards ease-in-out;
+    }
+
+    @media (max-width: 640px) {
+        .splash-drawing-text {
+            font-size: 60px;
+        }
+    }
+
+    @keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes fillText {
+        to {
+            fill: #F5E6D3;
+            stroke-width: 0;
+        }
+    }
+
+    .splash-progress-container {
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .splash-progress-text {
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .splash-progress-bar-bg {
+        width: 100%;
+        height: 2px;
+        background-color: rgba(245, 230, 211, 0.2);
+        position: relative;
+    }
+
+    .splash-progress-bar-fill {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #F5E6D3;
+        width: 0%;
+        transition: width 0.1s linear;
+    }
+</style>
+
+<div id="splash-screen">
+    <div class="splash-logo-container">
+        <svg width="600" height="150" viewBox="0 0 600 150" class="w-full max-w-[600px]">
+            <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" class="splash-drawing-text">Vivaha Vedika</text>
+        </svg>
+    </div>
+    <div class="splash-progress-container">
+        <div class="splash-progress-text" id="splash-progress-text">1%</div>
+        <div class="splash-progress-bar-bg">
+            <div class="splash-progress-bar-fill" id="splash-progress-fill"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Prevent scrolling while loading
+    document.body.style.overflow = 'hidden';
+
+    const splashScreen = document.getElementById('splash-screen');
+    const progressText = document.getElementById('splash-progress-text');
+    const progressFill = document.getElementById('splash-progress-fill');
+    
+    // Using sessionStorage so it only shows ONCE per session to prevent annoyance when navigating back to home page.
+    // However, if the user explicitly wants it every single time they go to Home.html, we can remove this check.
+    // Given standard web practices, a session check is highly recommended, but we'll run it every time since they asked.
+
+    const duration = 2800; 
+    const interval = 30; 
+    const steps = duration / interval;
+    let currentStep = 0;
+    
+    const loadingTimer = setInterval(() => {
+        currentStep++;
+        let percent = Math.min(Math.floor((currentStep / steps) * 100), 100);
+        
+        let displayPercent = percent;
+        if (percent > 90) {
+            displayPercent = 90 + Math.floor((percent - 90) * (currentStep % 2));
+            if (percent === 100) displayPercent = 100;
+        }
+
+        progressText.textContent = displayPercent + '%';
+        progressFill.style.width = displayPercent + '%';
+
+        if (percent >= 100) {
+            clearInterval(loadingTimer);
+            setTimeout(() => {
+                splashScreen.style.opacity = '0';
+                splashScreen.style.pointerEvents = 'none';
+                document.body.style.overflow = ''; // restore scrolling
+                setTimeout(() => splashScreen.remove(), 800);
+            }, 400);
+        }
+    }, interval);
+</script>
+<!-- End Splash Screen -->
+  <!-- TopNavBar -->
+  <nav
+    class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl border-b border-primary/10 shadow-sm transition-all duration-500 ease-in-out">
+    <div class="flex justify-between items-center w-full px-6 md:px-margin-edge max-w-container-max-width mx-auto py-6">
+      <a class="flex items-center gap-[12px] text-primary dark:text-primary-fixed-dim transition-opacity hover:opacity-80" href="Home.html">
+        <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'wght' 200;">diamond</span>
+        <span class="font-headline-md text-[20px] tracking-[0.1em] capitalize">Vivaha Vedika</span>
+      </a>
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-10">
+        <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300"
+          href="Home.html">Home</a>
+        <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300"
+          href="Home.html#portfolio">Portfolio</a>
+        <div class="relative group py-4">
+          <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300 flex items-center gap-1"
+            href="Home.html#services-section">Services <span
+              class="material-symbols-outlined text-[16px]">expand_more</span></a>
+          <div
+            class="absolute left-0 top-[100%] w-56 bg-surface dark:bg-surface-dim shadow-xl border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col py-2 z-50">
+            <a href="BrideNalugu.html"
+              class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Bride
+              Nalugu</a>
+            <a href="GroomNalugu.html"
+              class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Groom
+              Nalugu</a>
+            <a href="couplehaldi.html"
+              class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Couple
+              Haldi</a>
+            <a href="Mehndi.html"
+              class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Mehendi</a>
+            <a href="sangeeth.html"
+              class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Sangeet</a>
+            <a href="wedding.html"
+              class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Wedding</a>
+            <a href="reception.html"
+              class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Reception</a>
+            <a href="cocktail.html"
+              class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Cocktail
+              Party</a>
+            <a href="Birthday.html"
+              class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Birthday</a>
+          </div>
+        </div>
+        <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300"
+          href="Home.html#philosophy">Philosophy</a>
+        <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300"
+          href="Home.html#journal">Journal</a>
+        <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300"
+          href="Home.html#inquire">Inquire</a>
+      </div>
+      <!-- Book CTA + Hamburger -->
+      <div class="flex items-center gap-3">
+        <button
+          class="bg-primary text-on-primary font-label-caps text-label-caps px-8 py-3 tracking-widest hover:bg-primary-container transition-all duration-300 hidden md:block">Book
+          a Consult</button>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-full hover:bg-primary/10 transition-colors"
+          aria-label="Open menu">
+          <span class="material-symbols-outlined text-primary text-2xl">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="fixed inset-0 z-[200] pointer-events-none">
+    <div id="mobile-menu-backdrop"
+      class="absolute inset-0 bg-inverse-surface/60 opacity-0 transition-opacity duration-300 pointer-events-none">
+    </div>
+    <div id="mobile-menu-drawer"
+      class="absolute top-0 right-0 h-full w-72 bg-surface shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+      <div class="flex items-center justify-between px-8 py-6 border-b border-outline-variant">
+        <span class="font-headline-md text-primary tracking-[0.2em] uppercase text-sm">Menu</span>
+        <button id="mobile-menu-close" class="rounded-full p-2 hover:bg-surface-variant transition-colors"
+          aria-label="Close menu">
+          <span class="material-symbols-outlined text-on-surface">close</span>
+        </button>
+      </div>
+      <nav class="flex flex-col px-8 py-8 gap-5 flex-1 overflow-y-auto">
+        <a href="Home.html"
+          class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Home</a>
+        <a href="Home.html#portfolio"
+          class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Portfolio</a>
+        <div class="flex flex-col border-b border-outline-variant pb-4">
+          <a href="Home.html#services-section"
+            class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors mb-4">Services</a>
+          <div class="flex flex-col pl-4 gap-3 border-l border-outline-variant/30 ml-2">
+            <a href="BrideNalugu.html"
+              class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Bride
+              Nalugu</a>
+            <a href="GroomNalugu.html"
+              class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Groom
+              Nalugu</a>
+            <a href="couplehaldi.html"
+              class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Couple
+              Haldi</a>
+            <a href="Mehndi.html"
+              class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Mehendi</a>
+            <a href="sangeeth.html"
+              class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Sangeet</a>
+            <a href="wedding.html"
+              class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Wedding</a>
+            <a href="reception.html"
+              class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Reception</a>
+            <a href="cocktail.html"
+              class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Cocktail
+              Party</a>
+            <a href="Birthday.html"
+              class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Birthday</a>
+          </div>
+        </div>
+        <a href="Home.html#philosophy"
+          class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Philosophy</a>
+        <a href="Home.html#journal"
+          class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Journal</a>
+        <a href="Home.html#inquire"
+          class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors">Inquire</a>
+      </nav>
+      <div class="px-8 pb-8">
+        <button
+          class="w-full bg-primary text-on-primary font-label-caps text-label-caps tracking-widest uppercase px-8 py-4 hover:bg-primary-container transition-colors duration-300">Book
+          a Consult</button>
+      </div>
+    </div>
+  </div>
+  <script>
+      (function () {
+        var menu = document.getElementById('mobile-menu');
+        var backdrop = document.getElementById('mobile-menu-backdrop');
+        var drawer = document.getElementById('mobile-menu-drawer');
+        var closeBtn = document.getElementById('mobile-menu-close');
+        var menuBtn = document.getElementById('mobile-menu-btn');
+        function openMenu() {
+          menu.classList.remove('pointer-events-none');
+          backdrop.classList.remove('opacity-0', 'pointer-events-none');
+          backdrop.classList.add('opacity-100', 'pointer-events-auto');
+          drawer.classList.remove('translate-x-full');
+          drawer.classList.add('translate-x-0');
+        }
+        function closeMenu() {
+          backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+          backdrop.classList.add('opacity-0', 'pointer-events-none');
+          drawer.classList.remove('translate-x-0');
+          drawer.classList.add('translate-x-full');
+          setTimeout(function () { menu.classList.add('pointer-events-none'); }, 300);
+        }
+        if (menuBtn) menuBtn.addEventListener('click', openMenu);
+        if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+        if (backdrop) backdrop.addEventListener('click', closeMenu);
+      })();
+  </script>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img alt="Luxury Wedding Hero" class="w-full h-full object-cover scale-105"
+        data-alt="A grand cinematic view of a luxury Indian wedding ceremony held at dusk in a royal palace courtyard. The scene is illuminated by thousands of warm candles and crystal chandeliers, casting a golden glow on the intricate floral decor of marigolds and roses. The architectural backdrop features majestic stone arches and traditional regal motifs under a deep indigo sky."
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrDYTxd5br0xn7HR5TlugaBoarZYidPC4Oo0HAiQZwUqsMkLHD_ohy5C4fjwzBtdgbFiO0Rz5JxOJkk5eMTq4lXjP17z9hhy2JV5lWP2hM5UZSsdQL9X2gsRRPw28rZFItbPAURslh2I3K8hmC6TnIvaGKdly4qbugH-8s3pGP5Edk8n7HeFDvrcTi2QTV23hFF6rP2bL84bjfDeoqvbcPFW6olu4NZhIbvYusAMaT3zxob1jMlp7mn04w8SEGK8rI8gQN_L8sq8CT" />
+      <div class="absolute inset-0 hero-gradient"></div>
+    </div>
+    <div class="relative z-10 text-center px-6 md:px-margin-edge max-w-4xl">
+      <span class="font-label-caps text-label-caps text-primary-fixed tracking-[0.4em] mb-6 block uppercase">The
+        Cinematic Heirloom</span>
+      <h1 class="font-display-xl text-headline-md md:text-headline-lg md:text-display-xl text-surface-container-lowest mb-8">
+        Crafting Timeless Celebrations &amp; Luxury Experiences
+      </h1>
+      <p class="font-body-lg text-body-lg text-surface-container-low mb-12 max-w-2xl mx-auto opacity-90">
+        From intimate ceremonies to grand luxury weddings, we create unforgettable celebrations filled with elegance,
+        emotions, and beautiful memories.
+      </p>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+        <button
+          class="px-10 py-4 bg-primary-container text-on-primary-fixed font-label-caps text-label-caps tracking-widest hover:scale-105 transition-transform duration-300 w-full md:w-auto">
+          Explore Portfolio
+        </button>
+        <button onclick="window.location.href='Consult.html'"
+          class="px-10 py-4 border border-surface-container-lowest text-surface-container-lowest font-label-caps text-label-caps tracking-widest hover:bg-surface/10 transition-all duration-300 w-full md:w-auto">Book Consultation</button>
+      </div>
+    </div>
+  </section>
+  <!-- About Preview -->
+  <section class="py-16 md:py-section-padding bg-surface" id="philosophy">
+    <div
+      class="max-w-container-max-width mx-auto px-6 md:px-margin-edge grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+      <div class="relative grid grid-cols-2 gap-4">
+        <div class="pt-20">
+          <img alt="About Detail 1" class="w-full h-[300px] md:h-[450px] object-cover shadow-xl"
+            data-alt="A close-up high-fidelity photograph of a traditional Indian bride's hands adorned with intricate henna patterns and heavy gold jewelry. The lighting is soft and warm, capturing the texture of the rich red silk saree and the sparkling diamonds. The mood is intimate and editorial, reflecting high-end luxury fashion photography."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSrGGdYjsnMe1tCEp39p7Ye4QcwOl5nSpQ4SkLQJyB1pBL0at694__0I8MGeRzQBpmVZpALNFUMyoPGYkrQO-2LW5y-zWlfkxr4QrVY2Re1ZekmSWoy-NbgLxNGYfgtrQAd5AYX-10LaScfJNJOkFTTfAkhgpXPDF93Nr6IgGiV55RoksJq307kGWnMOGeBjiCt-ObPwXFjQF8o_GzWDmWAO8aU90scQUO5zn_akl-kB7iGBg6HKefaMcBM9j2-BlFrvVmbb9Cq0n0" />
+        </div>
+        <div>
+          <img alt="About Detail 2" class="w-full h-[400px] md:h-[550px] object-cover shadow-xl"
+            data-alt="A wide-angle shot of a meticulously planned luxury outdoor wedding reception set against a Tuscan-style villa. Long banquet tables are covered in fine ivory linen, decorated with tall emerald green floral arrangements and gold candelabras. The atmosphere is sophisticated and quiet, with a focus on negative space and premium design elements."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi-i0bi39ZBnBWrIXSLDeI_MpSarLRCkWLy-93HLEeZQgq1lD95-SfGuzlGkMuTt3D_51sV00ahqokDKXKuPSjFKoZDPx0anfTK-un8oAuQjNrz1IKDDZZ_tGZN1FsKDTB_Pas1846oUOaj1H_-CbuMZ5-gYK6npsAxUlH00cXJGLvKJYXa4kqCZBRFgVuy-kxibXlT0qNqMRwZxTIoB3msMSNFcx-USgSuZ41hrH1RWf42nuaekv5zz1xEzoo3i55akO08nZ1YUCR" />
+        </div>
+      </div>
+      <div class="lg:pl-16">
+        <span class="font-label-caps text-label-caps text-primary tracking-widest mb-4 block uppercase">Our
+          Legacy</span>
+        <h2 class="font-headline-lg text-headline-md md:text-headline-lg mb-8 leading-tight">Quiet Grandeur. Emotional Precision.</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-12 italic">
+          "We believe every wedding is a cinematic masterpiece waiting to be told. Our approach bridges the traditional
+          opulence of Indian heritage with the understated elegance of modern European luxury."
+        </p>
+        <div class="grid grid-cols-2 gap-y-8 md:gap-y-12 gap-x-4 md:gap-x-8">
+          <div>
+            <span class="block font-display-xl text-headline-md md:text-headline-lg text-primary">500+</span>
+            <span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Weddings Managed</span>
+          </div>
+          <div>
+            <span class="block font-display-xl text-headline-md md:text-headline-lg text-primary">1000+</span>
+            <span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Happy Couples</span>
+          </div>
+          <div>
+            <span class="block font-display-xl text-headline-md md:text-headline-lg text-primary">15+</span>
+            <span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Years of
+              Experience</span>
+          </div>
+          <div>
+            <span class="block font-display-xl text-headline-md md:text-headline-lg text-primary">2000+</span>
+            <span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Events Planned</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services Carousel Section -->
+  <section class="py-16 md:py-section-padding bg-surface-container-low overflow-hidden" id="services-section">
+    <div class="max-w-container-max-width mx-auto px-6 md:px-margin-edge">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="font-label-caps text-label-caps text-primary tracking-widest mb-4 block uppercase">Our
+            Expertise</span>
+          <h2 class="font-headline-lg text-headline-md md:text-headline-lg">Curated Services</h2>
+          <div class="w-24 h-px bg-primary mt-6 opacity-30"></div>
+        </div>
+        <div class="flex gap-3 items-center">
+          <button id="svc-prev" aria-label="Previous"
+            class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:border-primary hover:text-on-primary text-on-surface transition-all duration-300">
+            <span class="material-symbols-outlined text-xl">arrow_back</span>
+          </button>
+          <button id="svc-next" aria-label="Next"
+            class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:border-primary hover:text-on-primary text-on-surface transition-all duration-300">
+            <span class="material-symbols-outlined text-xl">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+      <div class="relative overflow-hidden">
+        <div id="svc-track" class="flex gap-4 transition-transform duration-500 ease-in-out will-change-transform">
+          <a href="Mehndi.html" class="group relative flex-shrink-0 w-[320px] h-[440px] overflow-hidden block">
+            <img alt="Mehendi"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl-woiQHfG3SSYbjGQtvucOAcA-VdFo0FTxE6vGkMJDBE4_08GxGUXHN7erc1agrb4NG8N5rDLFMAPVRctWidL8RndgvcaBmwPWnf-Cu62-usomU3p4hqCQkIceYoJz9m-64OMHwGrmDW8TPrC7KNsJK_f_ZxS58MaTqxLOoMWxm7BdtCaVzyce59Ul8AnY2ntbk8VAwTWa29cufFBGDl4FtmMfj5PIcBn6J1hIiiHO6Y8wmUY3RTtqLC73X62aI39WyjBpBSdLEgN" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+            <div
+              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full p-8 text-surface translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              <span
+                class="font-label-caps text-label-caps uppercase tracking-widest text-[10px] text-primary-fixed-dim block mb-1">Ritual</span>
+              <h3 class="font-headline-md text-2xl">Mehendi</h3>
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-base mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">arrow_forward</span>
+            </div>
+          </a>
+          <a href="sangeeth.html" class="group relative flex-shrink-0 w-[320px] h-[440px] overflow-hidden block">
+            <img alt="Sangeet"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlL98Ulm7tvz1KVAMXGI6xw6LYob3bjujmJ0oKcOGDTOGVGMz_PaFow5ia2XpJZcgzMhaOx7dv4R669oUqEH4i78mwbmS6u2g4OYGtybitv2Z3s2LM9yCWAtP7J-sd2J3HIM1Y6RLyua75Iu5fVSB4UCoOy7oFI9NfG0QncMjnlykAhjSskM5izWhD5Uz2QYNd3KIPFWpVLIlgn8n4_92YFIgba2KxpQnxTafxyvtEDoeD9vTROSRLVbsOnRCsiSUI630BSX03PX1K" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+            <div
+              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full p-8 text-surface translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              <span
+                class="font-label-caps text-label-caps uppercase tracking-widest text-[10px] text-primary-fixed-dim block mb-1">Celebration</span>
+              <h3 class="font-headline-md text-2xl">Sangeet</h3>
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-base mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">arrow_forward</span>
+            </div>
+          </a>
+          <a href="wedding.html" class="group relative flex-shrink-0 w-[320px] h-[440px] overflow-hidden block">
+            <img alt="Wedding"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBZvP2948AgzCOETUgfsLBSxZiDNoQOxVCLx6PDPXCMMQ9M9YYMvfazQGGVGShy2G9lB__d4dG569msm_JEOjtJA5zJTYoac3liyPlr3ArxqF5jqjtsOsDA7wiHg_ULr22U8v-KzYSD4otztojBnhY7m5edzWc7dHeklZPsqk5SRTydKPxtJX-o-8bB5DDZGNdskbbBOJoEMHEOqvNQ796i72bP3uWUJc0Kq_XDXF1unCaiOJQRCm7Mp66dCnq6m5J0srxP3PYI_QE" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+            <div
+              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full p-8 text-surface translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              <span
+                class="font-label-caps text-label-caps uppercase tracking-widest text-[10px] text-primary-fixed-dim block mb-1">The
+                Union</span>
+              <h3 class="font-headline-md text-2xl">Wedding</h3>
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-base mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">arrow_forward</span>
+            </div>
+          </a>
+          <a href="reception.html" class="group relative flex-shrink-0 w-[320px] h-[440px] overflow-hidden block">
+            <img alt="Reception"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuJ9t1CGZdJadf85U11Tu3hIQBOjpAUb-rVmI4flFKuj9TkXGCXLFAVRj3Z2phjNUM3WXwswPxF8XVCQrQT4ayBywvvPGzXL01qN_BhBTCRlQe3JCykP0T9KLbYNP9AhZEDZCAUHmBm1lBPuHbN1056vT98QhZrccONY-6ocs9hK19mzHaw9npeyPpWLYJW38MKq6GxOFw0h3xOXd9EhMPhYTFKo1_L7hIs2SsRNRz0meKXMEXi4BU5bKX18dmoepiyEQi0WHf-926" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+            <div
+              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full p-8 text-surface translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              <span
+                class="font-label-caps text-label-caps uppercase tracking-widest text-[10px] text-primary-fixed-dim block mb-1">Grand
+                Finale</span>
+              <h3 class="font-headline-md text-2xl">Reception</h3>
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-base mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">arrow_forward</span>
+            </div>
+          </a>
+          <a href="cocktail.html" class="group relative flex-shrink-0 w-[320px] h-[440px] overflow-hidden block">
+            <img alt="Cocktail Party"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlL98Ulm7tvz1KVAMXGI6xw6LYob3bjujmJ0oKcOGDTOGVGMz_PaFow5ia2XpJZcgzMhaOx7dv4R669oUqEH4i78mwbmS6u2g4OYGtybitv2Z3s2LM9yCWAtP7J-sd2J3HIM1Y6RLyua75Iu5fVSB4UCoOy7oFI9NfG0QncMjnlykAhjSskM5izWhD5Uz2QYNd3KIPFWpVLIlgn8n4_92YFIgba2KxpQnxTafxyvtEDoeD9vTROSRLVbsOnRCsiSUI630BSX03PX1K" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+            <div
+              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full p-8 text-surface translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              <span
+                class="font-label-caps text-label-caps uppercase tracking-widest text-[10px] text-primary-fixed-dim block mb-1">Glamour
+                Night</span>
+              <h3 class="font-headline-md text-2xl">Cocktail Party</h3>
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-base mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">arrow_forward</span>
+            </div>
+          </a>
+          <a href="BrideNalugu.html" class="group relative flex-shrink-0 w-[320px] h-[440px] overflow-hidden block">
+            <img alt="Bride Nalugu"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl-woiQHfG3SSYbjGQtvucOAcA-VdFo0FTxE6vGkMJDBE4_08GxGUXHN7erc1agrb4NG8N5rDLFMAPVRctWidL8RndgvcaBmwPWnf-Cu62-usomU3p4hqCQkIceYoJz9m-64OMHwGrmDW8TPrC7KNsJK_f_ZxS58MaTqxLOoMWxm7BdtCaVzyce59Ul8AnY2ntbk8VAwTWa29cufFBGDl4FtmMfj5PIcBn6J1hIiiHO6Y8wmUY3RTtqLC73X62aI39WyjBpBSdLEgN" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+            <div
+              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full p-8 text-surface translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              <span
+                class="font-label-caps text-label-caps uppercase tracking-widest text-[10px] text-primary-fixed-dim block mb-1">Pre-Wedding</span>
+              <h3 class="font-headline-md text-2xl">Bride Nalugu</h3>
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-base mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">arrow_forward</span>
+            </div>
+          </a>
+          <a href="GroomNalugu.html" class="group relative flex-shrink-0 w-[320px] h-[440px] overflow-hidden block">
+            <img alt="Groom Nalugu"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBZvP2948AgzCOETUgfsLBSxZiDNoQOxVCLx6PDPXCMMQ9M9YYMvfazQGGVGShy2G9lB__d4dG569msm_JEOjtJA5zJTYoac3liyPlr3ArxqF5jqjtsOsDA7wiHg_ULr22U8v-KzYSD4otztojBnhY7m5edzWc7dHeklZPsqk5SRTydKPxtJX-o-8bB5DDZGNdskbbBOJoEMHEOqvNQ796i72bP3uWUJc0Kq_XDXF1unCaiOJQRCm7Mp66dCnq6m5J0srxP3PYI_QE" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+            <div
+              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full p-8 text-surface translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              <span
+                class="font-label-caps text-label-caps uppercase tracking-widest text-[10px] text-primary-fixed-dim block mb-1">Pre-Wedding</span>
+              <h3 class="font-headline-md text-2xl">Groom Nalugu</h3>
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-base mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">arrow_forward</span>
+            </div>
+          </a>
+          <a href="couplehaldi.html" class="group relative flex-shrink-0 w-[320px] h-[440px] overflow-hidden block">
+            <img alt="Couple Haldi"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuJ9t1CGZdJadf85U11Tu3hIQBOjpAUb-rVmI4flFKuj9TkXGCXLFAVRj3Z2phjNUM3WXwswPxF8XVCQrQT4ayBywvvPGzXL01qN_BhBTCRlQe3JCykP0T9KLbYNP9AhZEDZCAUHmBm1lBPuHbN1056vT98QhZrccONY-6ocs9hK19mzHaw9npeyPpWLYJW38MKq6GxOFw0h3xOXd9EhMPhYTFKo1_L7hIs2SsRNRz0meKXMEXi4BU5bKX18dmoepiyEQi0WHf-926" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+            <div
+              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full p-8 text-surface translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              <span
+                class="font-label-caps text-label-caps uppercase tracking-widest text-[10px] text-primary-fixed-dim block mb-1">Ritual</span>
+              <h3 class="font-headline-md text-2xl">Couple Haldi</h3>
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-base mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">arrow_forward</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="svc-dots" class="flex justify-center gap-2 mt-10"></div>
+    </div>
+  </section>
+  <script>
+    (function () {
+      var track = document.getElementById('svc-track');
+      var prevBtn = document.getElementById('svc-prev');
+      var nextBtn = document.getElementById('svc-next');
+      var dotsBox = document.getElementById('svc-dots');
+      var cards = track ? Array.from(track.children) : [];
+      var current = 0;
+      var autoTimer;
+      var GAP = 16;
+      var CARD_W = 320;
+
+      function visibleCount() {
+        var w = window.innerWidth;
+        if (w >= 1280) return 4;
+        if (w >= 1024) return 3;
+        if (w >= 640) return 2;
+        return 1;
+      }
+
+      function maxIndex() { return Math.max(0, cards.length - visibleCount()); }
+
+      function goTo(idx) {
+        current = Math.max(0, Math.min(idx, maxIndex()));
+        track.style.transform = 'translateX(-' + (current * (CARD_W + GAP)) + 'px)';
+        updateDots();
+      }
+
+      function updateDots() {
+        Array.from(dotsBox.children).forEach(function (d, i) {
+          if (i === current) {
+            d.className = 'h-2 w-6 rounded-full bg-primary transition-all duration-300';
+          } else {
+            d.className = 'h-2 w-2 rounded-full bg-outline-variant transition-all duration-300';
+          }
+        });
+      }
+
+      function buildDots() {
+        dotsBox.innerHTML = '';
+        for (var i = 0; i <= maxIndex(); i++) {
+          var d = document.createElement('button');
+          d.className = i === 0 ? 'h-2 w-6 rounded-full bg-primary transition-all duration-300' : 'h-2 w-2 rounded-full bg-outline-variant transition-all duration-300';
+          d.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+          (function (idx) { d.addEventListener('click', function () { goTo(idx); resetAuto(); }); })(i);
+          dotsBox.appendChild(d);
+        }
+      }
+
+      function startAuto() { autoTimer = setInterval(function () { goTo(current >= maxIndex() ? 0 : current + 1); }, 3500); }
+      function resetAuto() { clearInterval(autoTimer); startAuto(); }
+
+      if (prevBtn) prevBtn.addEventListener('click', function () { goTo(current - 1); resetAuto(); });
+      if (nextBtn) nextBtn.addEventListener('click', function () { goTo(current + 1); resetAuto(); });
+
+      var touchStartX = 0;
+      if (track) {
+        track.addEventListener('touchstart', function (e) { touchStartX = e.touches[0].clientX; }, { passive: true });
+        track.addEventListener('touchend', function (e) {
+          var dx = touchStartX - e.changedTouches[0].clientX;
+          if (Math.abs(dx) > 50) { goTo(dx > 0 ? current + 1 : current - 1); resetAuto(); }
+        });
+      }
+
+      window.addEventListener('resize', function () { buildDots(); goTo(Math.min(current, maxIndex())); });
+      buildDots();
+      startAuto();
+    })();
+  </script>
+  </section>
+  <!-- Featured Portfolio -->
+  <section class="py-16 md:py-section-padding bg-surface" id="portfolio">
+    <div class="max-w-container-max-width mx-auto px-6 md:px-margin-edge">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+        <div>
+          <span class="font-label-caps text-label-caps text-primary tracking-widest mb-4 block uppercase">Our
+            Journal</span>
+          <h2 class="font-headline-lg text-headline-md md:text-headline-lg">Candid Narratives</h2>
+        </div>
+        <button
+          class="font-label-caps text-label-caps text-primary border-b border-primary pb-2 tracking-widest hover:opacity-60 transition-opacity">
+          View All Stories
+        </button>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="md:col-span-2 space-y-8">
+          <div class="relative group cursor-pointer overflow-hidden aspect-[16/9]">
+            <img alt="Portfolio 1"
+              class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+              data-alt="A breathtaking cinematic wide shot of a couple standing under a canopy of blooming cherry blossoms at twilight. The scene is illuminated by floating lanterns reflected in a still pool of water. The mood is deeply romantic and poetic, emphasizing a high-value aesthetic and emotional depth."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_PerTMCI-b16RQRHZzqijNAPaFp6jVgI1Bj-Bm9ctgrQMFZN61h1AO9HOW4XRq9A2EqfsHhTpwV4Hwd_jwnCcQ-vbxO8U_jH5NNMdErxkYHlsFiNy0xvYJOvO8iVbqj2vFVVB9bbSd0uUo5OMUtv3SyDpMuz9W7M1ANE8Pt4gd77SNhKUc7bpfrBEcAcBJxchh_lRk4BCSkiEyX4O4NPuEF22vq4Vzjt7S-a9bR4tvnO4d465al5abOz0JQ2KMlIhsfh6-6zTP-lw" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent flex items-end p-12 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div>
+                <h4 class="font-headline-md text-surface mb-2">A Parisian Affair</h4>
+                <span class="font-label-caps text-label-caps text-surface/70 uppercase">Destinations</span>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-8">
+            <div class="relative group cursor-pointer overflow-hidden aspect-square">
+              <img alt="Portfolio 2"
+                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                data-alt="A close-up artistic shot of crystal glassware and silver cutlery on a velvet tablecloth. The lighting creates sharp highlights and deep shadows, emphasizing the tactile quality of the luxury dining setup. The color palette is composed of cool greys and warm gold."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz6sho6zAFHP9v3OXW9K5LVgIiQIwYTs_uHDVKn1ehj11ss6R3a6kn2eLDf99zVaFWIBh2Lkx68h0ep0d8eNYiq5Bi-AxVNuQpl2ct8X1ZQaU2YP_MfjskGG-Bq_mwmpRbLrpmpjteffcnDf_gLDGskE0AB6Hgz01ouuTNMgR0sv0QwFC4yjGCVeXEU6Ao7xh_bXWZZ92qt03AYF3Yp_eOrFz211MTAJAELSBmOpf7BJFAOegN33xLLmpH-U5dEtH3d7XRnvaFJDPX" />
+              <div
+                class="absolute inset-0 glass-card opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-500">
+                <span
+                  class="font-label-caps text-label-caps text-primary uppercase border border-primary px-4 py-2">View
+                  Story</span>
+              </div>
+            </div>
+            <div class="relative group cursor-pointer overflow-hidden aspect-square">
+              <img alt="Portfolio 3"
+                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                data-alt="An ethereal image of a bride's long veil catching the wind against a dramatic desert backdrop at sunset. The orange sky contrasts with the white lace, creating a cinematic and epic visual. The mood is one of timeless elegance and grand scale."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFJvPifx3x9mf_JyoU9GkRP9yx-kr2U_WfJRpTTBRm1XfAg8PWUDEAK_wFK46bfgfdFPtMVekyZbh1oHjS_hhy9ppwXUgZ0YC-FI_R57psXhT6ySrubi4qttyNHKXbdyv4YnaPTq1FPhNU9gzX287yrx2p1TSJov4A8V5Gu86F_dWnpAxfAt-By7aGBzbXZaQHl4if1JogqA-y_mUySRbWvMSItN1vR6Mj109cDmoiUTX3PqDNUdUlCMkSvVRjFbqraq_cEWZVjEq5" />
+              <div
+                class="absolute inset-0 glass-card opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-500">
+                <span
+                  class="font-label-caps text-label-caps text-primary uppercase border border-primary px-4 py-2">View
+                  Story</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-8">
+          <div class="relative group cursor-pointer overflow-hidden aspect-[3/4]">
+            <img alt="Portfolio 4"
+              class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+              data-alt="A portrait of a couple sharing a quiet moment in a grand library with floor-to-ceiling bookshelves. The lighting is moody and dramatic, reminiscent of old European oil paintings. The scene focuses on intimacy and intellectual luxury."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwV6ZPqY_HT5e_ogJvx58mWu0Ou4kcpastOOOmMzCY0P8y1RH-d_CAzax-ifV0JgbZLvBN7-TpCUAACWRc6yd8GNL8cTIEVc3AgPf2ZDyWCXNlapcaAvp7azyEAK2QFti-kabE3XZRFJfQP-MLHOR5CURSbXWpf9hj-Tb4FCNRxHtXwGGqh0uE-gcmpRQPFZebikCPi2KDeISb89aKpbMQSIAjgrBmkwstH1AWVlYiUjTjbLudctkVSk-2jCbGD55GfW3Xj_sYGAXc" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent flex items-end p-12 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div>
+                <h4 class="font-headline-md text-surface mb-2">Heritage Love</h4>
+                <span class="font-label-caps text-label-caps text-surface/70 uppercase">Traditional</span>
+              </div>
+            </div>
+          </div>
+          <div class="relative group cursor-pointer overflow-hidden aspect-square">
+            <img alt="Portfolio 5"
+              class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+              data-alt="An aerial view of a grand wedding table shaped like an S, winding through an olive grove. The table is lit with hundreds of tiny candles, creating a magical and organic luxury setting. The lighting is soft evening twilight, creating a peaceful and exclusive mood."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEsS4LiAsWfp5Hrk11sGdFfcJE6Bt-jZd5x8YioeRzsvCeYw7xGBzHo4muID5Kau5OC7BC1C3NisVtlYO4y5aGJIMDpjR3L4wLEOUPxltSDobkIU2GfafSa3dzG7CZPeYrLu75IaAozolNJrYhrf7GnrjBI_MpU386RT96vYvSouvmqkR-KDxFsdP6IPHLVV0fNz9EKrsQ9uMtL3Hy-WMOp8jatBTSvozp2sM17wNNgVcnwucgC7LP98G5btre0V0O-zAKhLxV5Jng" />
+            <div
+              class="absolute inset-0 glass-card opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-500">
+              <span class="font-label-caps text-label-caps text-primary uppercase border border-primary px-4 py-2">View
+                Story</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Why Choose Us -->
+  <section class="py-16 md:py-section-padding bg-surface-container-low">
+    <div class="max-w-container-max-width mx-auto px-6 md:px-margin-edge">
+      <div class="text-center mb-24">
+        <span class="font-label-caps text-label-caps text-primary tracking-widest mb-4 block uppercase">Our Ethos</span>
+        <h2 class="font-headline-lg text-headline-md md:text-headline-lg">The Yellow Philosophy</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+        <!-- 1 -->
+        <div class="p-8 border border-outline-variant/30 hover:bg-surface transition-colors duration-300">
+          <span class="material-symbols-outlined text-4xl text-primary mb-6"
+            data-icon="auto_awesome">auto_awesome</span>
+          <h3 class="font-headline-md text-xl mb-4">Personalized Planning</h3>
+          <p class="font-body-md text-on-surface-variant">Every detail tailored to your unique journey and aesthetic
+            preferences.</p>
+        </div>
+        <!-- 2 -->
+        <div class="p-8 border border-outline-variant/30 hover:bg-surface transition-colors duration-300">
+          <span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="diamond">diamond</span>
+          <h3 class="font-headline-md text-xl mb-4">Luxury Decor</h3>
+          <p class="font-body-md text-on-surface-variant">Sourcing the finest materials and floral installations from
+            across the globe.</p>
+        </div>
+        <!-- 3 -->
+        <div class="p-8 border border-outline-variant/30 hover:bg-surface transition-colors duration-300">
+          <span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="all_inbox">all_inbox</span>
+          <h3 class="font-headline-md text-xl mb-4">End-to-End Mgmt</h3>
+          <p class="font-body-md text-on-surface-variant">Seamless execution from the first moodboard to the final guest
+            departure.</p>
+        </div>
+        <!-- 4 -->
+        <div class="p-8 border border-outline-variant/30 hover:bg-surface transition-colors duration-300">
+          <span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="public">public</span>
+          <h3 class="font-headline-md text-xl mb-4">Global Network</h3>
+          <p class="font-body-md text-on-surface-variant">Access to exclusive venues and world-class vendors in any
+            destination.</p>
+        </div>
+        <!-- 5 -->
+        <div class="p-8 border border-outline-variant/30 hover:bg-surface transition-colors duration-300">
+          <span class="material-symbols-outlined text-4xl text-primary mb-6"
+            data-icon="theater_comedy">theater_comedy</span>
+          <h3 class="font-headline-md text-xl mb-4">Event Design</h3>
+          <p class="font-body-md text-on-surface-variant">Cinematic conceptualization that creates an immersive guest
+            experience.</p>
+        </div>
+        <!-- 6 -->
+        <div class="p-8 border border-outline-variant/30 hover:bg-surface transition-colors duration-300">
+          <span class="material-symbols-outlined text-4xl text-primary mb-6"
+            data-icon="restaurant_menu">restaurant_menu</span>
+          <h3 class="font-headline-md text-xl mb-4">Curated Catering</h3>
+          <p class="font-body-md text-on-surface-variant">Bespoke culinary journeys designed by top-tier chefs and
+            mixologists.</p>
+        </div>
+        <!-- 7 -->
+        <div class="p-8 border border-outline-variant/30 hover:bg-surface transition-colors duration-300">
+          <span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="history_edu">history_edu</span>
+          <h3 class="font-headline-md text-xl mb-4">Heirloom Quality</h3>
+          <p class="font-body-md text-on-surface-variant">Creating memories that will be cherished for generations to
+            come.</p>
+        </div>
+        <!-- 8 -->
+        <div class="p-8 border border-outline-variant/30 hover:bg-surface transition-colors duration-300">
+          <span class="material-symbols-outlined text-4xl text-primary mb-6"
+            data-icon="verified_user">verified_user</span>
+          <h3 class="font-headline-md text-xl mb-4">Unmatched Privacy</h3>
+          <p class="font-body-md text-on-surface-variant">Discreet and professional handling for high-profile
+            celebrations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials Section -->
+  <section class="py-16 md:py-section-padding bg-surface overflow-hidden" id="journal">
+    <div class="max-w-container-max-width mx-auto px-6 md:px-margin-edge">
+      <div class="flex flex-col items-center text-center mb-16">
+        <span class="font-label-caps text-label-caps text-primary tracking-widest mb-4 block uppercase">The
+          Experience</span>
+        <h2 class="font-headline-lg text-headline-md md:text-headline-lg">Letters of Love</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+        <div class="relative">
+          <img alt="Testimonial Couple" class="w-full h-[600px] object-cover"
+            data-alt="A portrait of a smiling couple on their wedding day, laughing together in a sun-drenched garden. The image is warm and high-fidelity, with a beautiful bokeh background. It captures a moment of pure joy and authentic emotion, reflecting the success of a perfectly planned event."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZu_u_2kp01CQnZ1UkGwPsRsxx6JiZJWfPQe0jiiD5TS-9Hxc4WWCzRmxzkGBH_OxYXBw-I4S_XNkOpjLoD4ymxWByklNOr8i1XoPrwM_pHULCL6e326mPemRkHHGvV1GzxAzTgc6F3pBPwsXE5UCZhuqndnFn0f5XtJjlkpf_L64T54kd_W6w6bcB0N3JuqgwfxjvtSGpUUz_jD8MCi-x4X92PBA2LeGRjBcsUzjaUlW6g4bIXHp3KtVhpP0NArV9fESC7z4n1zGN" />
+          <div class="absolute -bottom-10 -right-10 bg-primary-container p-12 hidden lg:block">
+            <span class="material-symbols-outlined text-6xl text-surface/30" data-icon="format_quote"
+              style="font-variation-settings: 'FILL' 1;">format_quote</span>
+          </div>
+        </div>
+        <div class="lg:pl-20">
+          <p class="font-display-xl text-headline-md text-on-surface mb-12 italic leading-snug">
+            "Vivaha Vedika didn't just plan a wedding; they choreographed a dream. Every moment felt effortless, every
+            detail was perfection. It was truly the cinematic heirloom we'll keep forever."
+          </p>
+          <div>
+            <h4 class="font-headline-md text-2xl text-primary mb-1">Ayesha &amp; Rohan</h4>
+            <span class="font-label-caps text-label-caps text-outline uppercase tracking-widest">Umaid Bhawan Palace,
+              Jodhpur</span>
+          </div>
+          <div class="flex gap-4 mt-12">
+            <button
+              class="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-primary-container hover:text-on-primary-fixed transition-all">
+              <span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+            </button>
+            <button
+              class="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-primary-container hover:text-on-primary-fixed transition-all">
+              <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Instagram Gallery -->
+  <section class="py-16 md:py-section-padding bg-surface-container-low">
+    <div class="px-6 md:px-margin-edge max-w-container-max-width mx-auto mb-16 flex justify-between items-end">
+      <div>
+        <span class="font-label-caps text-label-caps text-primary tracking-widest mb-4 block uppercase">Social
+          Narrative</span>
+        <h2 class="font-headline-lg text-headline-md md:text-headline-lg">@YellowPlanners</h2>
+      </div>
+      <a class="font-label-caps text-label-caps text-primary border-b border-primary pb-2" href="#">Follow Us</a>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
+      <img alt="Insta 1" class="w-full aspect-square object-cover" data-alt="Close up of wedding flowers"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhOjtAs-xtsYrdZ4e9BaxheAVmTWgL3Zry3-UjCzN_erzfWEfG2okwl9heFOzR6gApPMN8UG56Y6iELvf-PgKjwQTR_5PxXiorstTFgg3Rad6OFOs2qJVgJjYXf8aQT457gRqZXiwLMouHiXkWWOsmVU33QBF_kiZmC0qg_oiYee6gYk6s0to93S37ysbxXMrniL4iNHXwgQ_CBiACMxmyNVuxe0r38zaPAMllz29KmrkKHD8dlL6e1fl-DpSmHUGMYzrG4u9z5W4b" />
+      <img alt="Insta 2" class="w-full aspect-square object-cover" data-alt="Elegant table setting"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFky25_hQasrhnPMDelzXFW85_iQE22Ohao4VwQpJl7jcjUKJHzITl5IFQSERX27Kjnfm-gQXn4BX9VIYFAfna7ViZA185l97togKrVfTDYd58OHJ2-jYNNqTv_OCw042-rDCeJuPOXURon6ssUtDGZLvFHyqAkpCv-bCv_lOW5uImBAm4AKWDgRs4_wyus0P9ZV2TM9kmxbSmhzDghAz1OtSd6DTgm_4oDKoxQnpSRGjWXjoUKea3OhZiKSly-IdsWn6yZBuzLfmz" />
+      <img alt="Insta 3" class="w-full aspect-square object-cover" data-alt="Traditional gold jewelry"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjPH6sZkPGxK8O17cMecOX5LHEXJIe9t96HAKCdxWFtrnZ65h8_GEZLxrukutt08Xi9PpPk6wBo314TAKA3XpLwcW2nhPO4DMEVA_QbwzXXON06b4hTZv-7-zyUgNW_yMNhLiiYgZwREGe-1-lOZB1-k4Ic_pOqIo3r94tVkTJEH_Dg9EECgyw17Cs3ViBRw-WuXjRaKycehL1mTTLHIcUcBhEnRttBJGiJyk_7wS9ds-qZGmhHLiHXv4ywbknXGLADUIqYaquKSfz" />
+      <img alt="Insta 4" class="w-full aspect-square object-cover" data-alt="Sparkling event lights"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVStVSEz1yERXd3AagCk-XP7gQbYAvO1BThTARW43FE_tNl-g6lfpvAxhmCHtpjAXDUkUT2onIKcrOrfCPjg69ERVzsATQlWrAyqCXtGPrUESwUI-ZngkapL3lqHH0go-kbtWjfvJRteGAM7dGr_NRMQgzFDOs6IvFd4jzXxJFwzMk-kz_5E6FC2zaybfQ5GArsmcb7sYuCcqu-vucE43abD44MREqm4yGsyBMD0ZIxFhQXIV08Sj5fftRzfpiyai-DCVjByx3piJR" />
+      <img alt="Insta 5" class="w-full aspect-square object-cover" data-alt="Lush green garden venue"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkNF_M2Yea2w8f3Z_LYZ7_akBd58lAGmUwoZ4mH81Shd9II68kHthaET6tnsET3Z3aCyhPBgNHedcLm-FR3jN9AiBXe6xhq--5V9g0RP2W5EPLqGUn40Z62h2WmWeD04S3NbFWr52xNo_F-bXvuq0FDp6ylNDe2hnBs9CRV7bbg-fFNxE4h6pbjKBnG7-iFKQRyHWOoGhTrDgM7uZJCJEbILueHQk7grUPI7KigIE0GBzl6cK7wGrskLzIM3JNh6HNY32JSBh8s1Bn" />
+      <img alt="Insta 6" class="w-full aspect-square object-cover" data-alt="Happy wedding guests"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxmKPPdcAYrRxgTOrX71lJG7D5O99TnReU0cIWFoHifOmt8QqKL8W7F8Sj6ptpGBVzySrIZjDWR9wVuXkZSWX4Bm3GE3L_B_DQJqalyrY6W6R7ZT6ln2yHdDhqMJx17E9MrYIjwsOzRzxY6trOAa5VbhvJN_la-HkluoKhLfiJ5Vf2JMj39KgvyL_GbIVwHzFS3Lph6rLqtZbHnBG5ALJYszDzZtMCPrt5TYN8u0YcHOC5NRUC6YLCa-FNclNcOtCZkiZ431E8Bmip" />
+    </div>
+  </section>
+  <!-- Final CTA -->
+  <section class="relative py-16 md:py-section-padding overflow-hidden" id="inquire">
+    <div class="absolute inset-0 z-0">
+      <img alt="Final CTA Background" class="w-full h-full object-cover grayscale brightness-50"
+        data-alt="A dramatic low-key photograph of a grand ballroom being prepared for a gala. Thousands of tiny warm lights sparkle against the dark shadows, creating a sense of anticipation and magic. The lighting is sophisticated and minimal, highlighting the architectural grandeur of the space."
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_Tcwy7VxqAUe0Fy6aIur6EYWjQagzuBZVkNxRTZH1aSpD4-FU4C3MnW_YbdzqNav222bIvPvGXNweJgczgrwp7kLl-mU455OkcgfIix7vq4w3Yrqe7SJQscUp7SeS92Xs6eiv7OHfOLxN0h3uNMODEy8W0faJ0TthZ8DZoFVhvG7OxauYjWu-otVZtX4thlQ8zyR-EzmYQMpEpJqMojfzc0G_llVH6KrbbsyJrnQsuoHZfP4lOjuu4JFvkk-q9B7jt_BLhsf-x6pJ" />
+    </div>
+    <div class="relative z-10 max-w-container-max-width mx-auto px-6 md:px-margin-edge text-center">
+      <h2 class="font-display-xl text-headline-md md:text-headline-lg md:text-display-xl text-surface-container-lowest mb-8">Let's Create Your Dream Celebration
+      </h2>
+      <p class="font-body-lg text-body-lg text-surface/80 max-w-2xl mx-auto mb-12">
+        Begin your journey with a complimentary consultation. Together, we will draft the blueprint of your cinematic
+        heirloom.
+      </p>
+      <button onclick="window.location.href='Consult.html'"
+        class="px-8 md:px-16 py-4 md:py-6 bg-primary-container text-on-primary-fixed font-label-caps text-label-caps tracking-[0.3em] uppercase hover:scale-105 transition-transform duration-300">Schedule Consultation</button>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer
+    class="bg-surface-container-low dark:bg-surface-container-lowest w-full py-16 md:py-section-padding border-t border-outline-variant/20 transition-all duration-300">
+    <div class="px-6 md:px-margin-edge max-w-container-max-width mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-gutter mb-24">
+        <div class="max-w-md">
+          <a class="font-headline-md text-headline-md text-primary mb-8 block tracking-widest uppercase" href="#">Vivaha
+            Vedika</a>
+          <p class="font-body-md text-on-surface-variant mb-8">
+            The Cinematic Heirloom. Creating world-class luxury wedding experiences that bridge heritage and modernity.
+          </p>
+          <div class="flex gap-6">
+            <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Instagram</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Pinterest</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-16">
+          <div>
+            <h5 class="font-label-caps text-label-caps text-primary uppercase mb-6 tracking-widest">Navigation</h5>
+            <ul class="space-y-4 font-body-md text-on-surface-variant">
+              <li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+              <li><a class="hover:text-primary transition-colors" href="#">Services</a></li>
+              <li><a class="hover:text-primary transition-colors" href="#">Portfolio</a></li>
+              <li><a class="hover:text-primary transition-colors" href="#">Blogs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-label-caps text-label-caps text-primary uppercase mb-6 tracking-widest">Inquiries</h5>
+            <ul class="space-y-4 font-body-md text-on-surface-variant">
+              <li><a class="hover:text-primary transition-colors" href="#">Consultation</a></li>
+              <li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+              <li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-span-2 md:col-span-1">
+            <h5 class="font-label-caps text-label-caps text-primary uppercase mb-6 tracking-widest">Newsletter</h5>
+            <div class="flex border-b border-outline-variant">
+              <input class="bg-transparent border-none focus:ring-0 w-full py-2 font-body-md text-on-surface"
+                placeholder="Your email" type="email" />
+              <button class="material-symbols-outlined text-primary" data-icon="arrow_forward">arrow_forward</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row justify-between items-center gap-gutter pt-8 border-t border-outline-variant/10">
+        <p class="font-body-md text-on-surface-variant text-sm">Ã‚Â© 2024 Vivaha Vedika. The Cinematic Heirloom.</p>
+        <div class="flex gap-8 font-label-caps text-label-caps text-[10px] uppercase tracking-widest text-outline">
+          <a class="hover:text-primary" href="#">Terms of Service</a>
+          <a class="hover:text-primary" href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
+
+
+

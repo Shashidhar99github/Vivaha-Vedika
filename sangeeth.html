@@ -1,0 +1,530 @@
+﻿<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vivaha Vedika | Grand Sangeet Nights</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Hanken+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary": "#775a19",
+                      "inverse-on-surface": "#f3f0ef",
+                      "on-tertiary-container": "#4d3700",
+                      "secondary-fixed": "#e5e2dd",
+                      "tertiary-container": "#c0a161",
+                      "on-primary-fixed": "#261900",
+                      "secondary": "#5f5e5b",
+                      "on-background": "#1c1b1b",
+                      "surface-container-high": "#eae7e7",
+                      "outline": "#7f7667",
+                      "surface-variant": "#e5e2e1",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-fixed-variant": "#474743",
+                      "on-secondary": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "inverse-surface": "#313030",
+                      "error": "#ba1a1a",
+                      "surface-container-highest": "#e5e2e1",
+                      "outline-variant": "#d1c5b4",
+                      "on-surface": "#1c1b1b",
+                      "surface-container-low": "#f6f3f2",
+                      "on-tertiary-fixed": "#261a00",
+                      "tertiary": "#745b22",
+                      "surface": "#fcf9f8",
+                      "secondary-fixed-dim": "#c9c6c2",
+                      "primary-fixed-dim": "#e9c176",
+                      "on-primary-fixed-variant": "#5d4201",
+                      "surface-tint": "#775a19",
+                      "tertiary-fixed-dim": "#e4c27e",
+                      "on-tertiary-fixed-variant": "#5a430b",
+                      "on-secondary-fixed": "#1c1c19",
+                      "inverse-primary": "#e9c176",
+                      "primary-container": "#c5a059",
+                      "on-secondary-container": "#656461",
+                      "surface-dim": "#dcd9d9",
+                      "secondary-container": "#e5e2dd",
+                      "primary-fixed": "#ffdea5",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed": "#ffdf9e",
+                      "on-surface-variant": "#4e4639",
+                      "on-error": "#ffffff",
+                      "background": "#fcf9f8",
+                      "surface-bright": "#fcf9f8",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container": "#f0eded",
+                      "error-container": "#ffdad6",
+                      "on-primary-container": "#4e3700",
+                      "midnight": "#020617",
+                      "luxury-purple": "#2e1065",
+                      "luxury-indigo": "#1e1b4b"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "container-max-width": "1440px",
+                      "section-padding": "128px",
+                      "margin-edge": "64px",
+                      "gutter": "32px"
+              },
+              "fontFamily": {
+                      "display-xl": ["Playfair Display"],
+                      "label-caps": ["Hanken Grotesk"],
+                      "body-lg": ["Hanken Grotesk"],
+                      "body-md": ["Hanken Grotesk"],
+                      "headline-lg": ["Playfair Display"],
+                      "headline-md": ["Playfair Display"]
+              },
+              "fontSize": {
+                      "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "label-caps": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                      "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-dark {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .gilded-gradient {
+            background: linear-gradient(90deg, transparent 0%, #775a19 50%, transparent 100%);
+        }
+        .stage-glow {
+            box-shadow: 0 0 40px rgba(119, 90, 25, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- Splash Screen Overlay -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    #splash-screen {
+        position: fixed;
+        inset: 0;
+        z-index: 999999;
+        background-color: #4A3525;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #F5E6D3;
+        transition: opacity 0.8s ease-out;
+    }
+    
+    .splash-logo-container {
+        position: relative;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .splash-drawing-text {
+        font-family: 'Great Vibes', cursive;
+        font-size: 100px;
+        fill: transparent;
+        stroke: #F5E6D3;
+        stroke-width: 2px;
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        animation: draw 2.5s ease-in-out forwards, fillText 0.8s 2s forwards ease-in-out;
+    }
+
+    @media (max-width: 640px) {
+        .splash-drawing-text {
+            font-size: 60px;
+        }
+    }
+
+    @keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes fillText {
+        to {
+            fill: #F5E6D3;
+            stroke-width: 0;
+        }
+    }
+
+    .splash-progress-container {
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .splash-progress-text {
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .splash-progress-bar-bg {
+        width: 100%;
+        height: 2px;
+        background-color: rgba(245, 230, 211, 0.2);
+        position: relative;
+    }
+
+    .splash-progress-bar-fill {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #F5E6D3;
+        width: 0%;
+        transition: width 0.1s linear;
+    }
+</style>
+
+<div id="splash-screen">
+    <div class="splash-logo-container">
+        <svg width="600" height="150" viewBox="0 0 600 150" class="w-full max-w-[600px]">
+            <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" class="splash-drawing-text">Vivaha Vedika</text>
+        </svg>
+    </div>
+    <div class="splash-progress-container">
+        <div class="splash-progress-text" id="splash-progress-text">1%</div>
+        <div class="splash-progress-bar-bg">
+            <div class="splash-progress-bar-fill" id="splash-progress-fill"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Prevent scrolling while loading
+    document.body.style.overflow = 'hidden';
+
+    const splashScreen = document.getElementById('splash-screen');
+    const progressText = document.getElementById('splash-progress-text');
+    const progressFill = document.getElementById('splash-progress-fill');
+
+    const duration = 2800; 
+    const interval = 30; 
+    const steps = duration / interval;
+    let currentStep = 0;
+    
+    const loadingTimer = setInterval(() => {
+        currentStep++;
+        let percent = Math.min(Math.floor((currentStep / steps) * 100), 100);
+        
+        let displayPercent = percent;
+        if (percent > 90) {
+            displayPercent = 90 + Math.floor((percent - 90) * (currentStep % 2));
+            if (percent === 100) displayPercent = 100;
+        }
+
+        progressText.textContent = displayPercent + '%';
+        progressFill.style.width = displayPercent + '%';
+
+        if (percent >= 100) {
+            clearInterval(loadingTimer);
+            setTimeout(() => {
+                splashScreen.style.opacity = '0';
+                splashScreen.style.pointerEvents = 'none';
+                document.body.style.overflow = ''; // restore scrolling
+                setTimeout(() => splashScreen.remove(), 800);
+            }, 400);
+        }
+    }, interval);
+</script>
+<!-- End Splash Screen -->
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl border-b border-primary/10 shadow-sm transition-all duration-500 ease-in-out">
+<div class="flex justify-between items-center w-full px-6 md:px-margin-edge max-w-container-max-width mx-auto py-6">
+  <a class="flex items-center gap-[12px] text-primary dark:text-primary-fixed-dim transition-opacity hover:opacity-80" href="Home.html">
+        <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'wght' 200;">diamond</span>
+        <span class="font-headline-md text-[20px] tracking-[0.1em] capitalize">Vivaha Vedika</span>
+      </a>
+  <!-- Desktop Nav -->
+  <div class="hidden md:flex items-center gap-10">
+    <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html">Home</a>
+    <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#portfolio">Portfolio</a>
+    <div class="relative group py-4">
+      <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300 flex items-center gap-1" href="Home.html#services-section">Services <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="absolute left-0 top-[100%] w-56 bg-surface dark:bg-surface-dim shadow-xl border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col py-2 z-50">
+        <a href="BrideNalugu.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Bride Nalugu</a>
+        <a href="GroomNalugu.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Groom Nalugu</a>
+        <a href="couplehaldi.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Couple Haldi</a>
+        <a href="Mehndi.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Mehendi</a>
+        <a href="sangeeth.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Sangeet</a>
+        <a href="wedding.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Wedding</a>
+        <a href="reception.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Reception</a>
+        <a href="cocktail.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Cocktail Party</a>
+        <a href="Birthday.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Birthday</a>
+      </div>
+    </div>
+    <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#philosophy">Philosophy</a>
+    <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#journal">Journal</a>
+    <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#inquire">Inquire</a>
+  </div>
+  <!-- Book CTA + Hamburger -->
+  <div class="flex items-center gap-3">
+    <button onclick="window.location.href='Consult.html'" class="bg-primary text-on-primary font-label-caps text-label-caps px-8 py-3 tracking-widest hover:bg-primary-container transition-all duration-300 hidden md:block">Book a Consult</button>
+    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-full hover:bg-primary/10 transition-colors" aria-label="Open menu">
+      <span class="material-symbols-outlined text-primary text-2xl">menu</span>
+    </button>
+  </div>
+</div>
+</nav>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-[200] pointer-events-none">
+  <div id="mobile-menu-backdrop" class="absolute inset-0 bg-inverse-surface/60 opacity-0 transition-opacity duration-300 pointer-events-none"></div>
+  <div id="mobile-menu-drawer" class="absolute top-0 right-0 h-full w-72 bg-surface shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+    <div class="flex items-center justify-between px-8 py-6 border-b border-outline-variant">
+      <span class="font-headline-md text-primary tracking-[0.2em] uppercase text-sm">Menu</span>
+      <button id="mobile-menu-close" class="rounded-full p-2 hover:bg-surface-variant transition-colors" aria-label="Close menu">
+        <span class="material-symbols-outlined text-on-surface">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col px-8 py-8 gap-5 flex-1 overflow-y-auto">
+      <a href="Home.html" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Home</a>
+      <a href="Home.html#portfolio" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Portfolio</a>
+      <div class="flex flex-col border-b border-outline-variant pb-4">
+        <a href="Home.html#services-section" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors mb-4">Services</a>
+        <div class="flex flex-col pl-4 gap-3 border-l border-outline-variant/30 ml-2">
+          <a href="BrideNalugu.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Bride Nalugu</a>
+          <a href="GroomNalugu.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Groom Nalugu</a>
+          <a href="couplehaldi.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Couple Haldi</a>
+          <a href="Mehndi.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Mehendi</a>
+          <a href="sangeeth.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Sangeet</a>
+          <a href="wedding.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Wedding</a>
+          <a href="reception.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Reception</a>
+          <a href="cocktail.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Cocktail Party</a>
+          <a href="Birthday.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Birthday</a>
+        </div>
+      </div>
+      <a href="Home.html#philosophy" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Philosophy</a>
+      <a href="Home.html#journal" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Journal</a>
+      <a href="Home.html#inquire" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors">Inquire</a>
+    </nav>
+    <div class="px-8 pb-8">
+      <button onclick="window.location.href='Consult.html'" class="w-full bg-primary text-on-primary font-label-caps text-label-caps tracking-widest uppercase px-8 py-4 hover:bg-primary-container transition-colors duration-300">Book a Consult</button>
+    </div>
+  </div>
+</div>
+<script>
+(function() {
+  var menu = document.getElementById('mobile-menu');
+  var backdrop = document.getElementById('mobile-menu-backdrop');
+  var drawer = document.getElementById('mobile-menu-drawer');
+  var closeBtn = document.getElementById('mobile-menu-close');
+  var menuBtn = document.getElementById('mobile-menu-btn');
+  function openMenu() {
+    menu.classList.remove('pointer-events-none');
+    backdrop.classList.remove('opacity-0','pointer-events-none');
+    backdrop.classList.add('opacity-100','pointer-events-auto');
+    drawer.classList.remove('translate-x-full');
+    drawer.classList.add('translate-x-0');
+  }
+  function closeMenu() {
+    backdrop.classList.remove('opacity-100','pointer-events-auto');
+    backdrop.classList.add('opacity-0','pointer-events-none');
+    drawer.classList.remove('translate-x-0');
+    drawer.classList.add('translate-x-full');
+    setTimeout(function(){ menu.classList.add('pointer-events-none'); }, 300);
+  }
+  if (menuBtn) menuBtn.addEventListener('click', openMenu);
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  if (backdrop) backdrop.addEventListener('click', closeMenu);
+})();
+</script>
+
+<!-- Main Content Canvas -->
+<main>
+<!-- Hero Section: Immersive Sangeet Stage -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden bg-midnight">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60 mix-blend-luminosity grayscale hover:grayscale-0 transition-all duration-1000" data-alt="A grand luxury Indian wedding Sangeet stage illuminated by deep royal purple and amber spotlighting. The background features complex geometric LED screens and cascading floral installations in shades of gold. The atmosphere is cinematic and high-energy, suggesting a prestigious concert environment with mist and light beams cutting through the air." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAqVu0ZEO_KxCzHpKGoi8kkaeLZzvGLANa8eHiDhchQQfnahLEkq_3Q9FGosRIUqhBcdLUhQmBZzzKREdnBhPqUrWu8EjxwMyNIKuuEgqwI0YBJrWgXJoqNXNneqvWEHihFVOoiUzN-kgdC3NoTVLuVIHe4W-_5IKGIF3PUIf5d_FX5raSO4Wwx0ZYCz7wsjVlR2qHUB-8jPYvyu14fYet1RaYinWH7506YwT1tSmLxxYAtNhTe0y-ldMz_n6AY1EE6lVG2gHpOuLv"/>
+<div class="absolute inset-0 bg-gradient-to-t from-midnight via-transparent to-midnight/50"></div>
+</div>
+<div class="relative z-10 text-center px-6 md:px-margin-edge max-w-4xl">
+<span class="font-label-caps text-label-caps text-primary-fixed-dim tracking-[0.4em] uppercase block mb-6">Music, Dance &amp; Unforgettable Celebrations</span>
+<h1 class="font-display-xl text-headline-md md:text-headline-lg md:text-display-xl text-surface-container-lowest mb-8">Grand Sangeet Nights Filled With Energy, Glamour &amp; Emotions</h1>
+<div class="flex flex-col md:flex-row gap-gutter justify-center mt-12">
+<button class="group relative px-10 py-5 bg-primary text-on-primary font-label-caps text-label-caps overflow-hidden transition-all duration-500">
+<span class="relative z-10">Plan Your Sangeet Night</span>
+<div class="absolute inset-0 bg-primary-fixed-dim opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+<div class="absolute -bottom-1 left-0 w-0 h-[2px] bg-white group-hover:w-full transition-all duration-500"></div>
+</button>
+<button class="px-10 py-5 border border-primary/40 text-primary-fixed-dim font-label-caps text-label-caps backdrop-blur-md hover:bg-primary/10 transition-all duration-300">
+                        Explore Sangeet Gallery
+                    </button>
+</div>
+</div>
+<!-- Floating Decorative Element -->
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce opacity-40">
+<span class="font-label-caps text-[10px] text-primary-fixed-dim mb-2 uppercase">Scroll to Discover</span>
+<span class="material-symbols-outlined text-primary-fixed-dim">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- Narrative & Feature Layer -->
+<section class="py-16 md:py-section-padding bg-surface">
+<div class="max-w-container-max-width mx-auto px-6 md:px-margin-edge">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left: Editorial Content -->
+<div class="lg:col-span-5 space-y-8">
+<div class="w-16 h-[1px] bg-primary mb-8"></div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary">A Symphony of Light &amp; Celebration</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            Our Sangeet planning transcends traditional celebration, evolving into a meticulously choreographed cinematic experience. We blend the high-octane energy of a grand concert with the intimate warmth of family bonding. 
+                            <br/><br/>
+                            From bespoke stage architectures that pulse with every beat to celebrity-caliber entry concepts, we ensure every moment is an emotional heirloom. Experience a night where every dance move tells a story, and every spotlight captures a lifetime of joy.
+                        </p>
+<!-- Features Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-gutter pt-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-weight="fill">theater_comedy</span>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary uppercase mb-1">Luxury Stage Design</h4>
+<p class="text-sm text-on-surface-variant">Bespoke architectural installations.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-weight="fill">music_note</span>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary uppercase mb-1">Live Music &amp; DJ Setup</h4>
+<p class="text-sm text-on-surface-variant">World-class acoustic engineering.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-weight="fill">groups</span>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary uppercase mb-1">Dance Coordination</h4>
+<p class="text-sm text-on-surface-variant">Professional choreography management.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-weight="fill">wb_iridescent</span>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary uppercase mb-1">LED Lighting Experience</h4>
+<p class="text-sm text-on-surface-variant">Cinematic visual atmospherics.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Asymmetric Layered Images -->
+<div class="lg:col-span-7 relative min-h-[600px] flex items-center justify-center">
+<!-- Background large image -->
+<div class="absolute right-0 top-0 w-3/4 h-3/4 shadow-2xl z-0 border-[12px] border-white overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="A high-fashion shot of a couple during their Sangeet entry, walking through a tunnel of professional cold-pyro sparklers. They are dressed in elaborate designer ethnic wear, with the bride's lehenga reflecting the warm golden sparks. The background is a wash of deep navy blue and purple stage lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMDmVm_wBCGDGpN7XW1cdYQZnQmBV18phBVHCFwIOW25ZRgeHvLxezlGfxzT8A2gG6ja9CVDYddrB669KMA2Z0V1zYelj7fEoi1HBYCQ8w45HDEpXoog4VqU7zEe1SKIyto6qXovNh6GawCoJ04ndC12AVAHMXLXsp4ghJLVz5T0-UtcSc3XfhypSUdocQ-OHGvD_pAz_BlnLHx9M5ws2Fj_oMFtHnQFSYXLgTC3jjD7rSP0wsmBes6UwrZNbd6_4KzTL8bU11RlAM"/>
+</div>
+<!-- Foreground small image -->
+<div class="absolute left-0 bottom-0 w-2/3 h-2/3 shadow-2xl z-10 border-[12px] border-white overflow-hidden">
+<img class="w-full h-full object-cover transition-all duration-700 hover:scale-110" data-alt="Intimate close-up of high-energy dance performance at a luxury Sangeet. Performers in vibrant gold and purple costumes are captured in motion, with stage fog creating a dreamy, ethereal glow around them. The lighting is dominated by amber spotlights and cool blue backlighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDi2SDsuMKJpbX1lTl5kxps2mlTZ4bWFB1emd-mKdE6WrmnCSOkNE-l5IQeY-Q2sVubtuE6ZiFF3so-Yskj9VCr59vApX7U1cYXtPbl2raIDhhQX73UfdgPhG-La5Sl1u2UHytxJQ0mUeKsTMo9VyhOCD95ceXfgOAyZb3FiNpnRqxNPJe8_a4qSkblW82Qsw9P3Jlr1An090ZX0KqKi-8oyhTnFqbPeix-wt6DSkKzqBK4zjD4Tnz7eGa49IMM-6aB2cqB02g4QNq"/>
+</div>
+<!-- Accent Element -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-primary/20 rounded-full flex items-center justify-center backdrop-blur-sm z-20">
+<div class="text-center">
+<span class="block font-headline-md text-headline-md text-primary">150+</span>
+<span class="block font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest">Nights Planned</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mood Gallery: Cinematic Masonry -->
+<section class="py-16 md:py-section-padding bg-surface-container-low">
+<div class="max-w-container-max-width mx-auto px-6 md:px-margin-edge">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-gutter">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.3em] uppercase block mb-4">The Portfolio</span>
+<h3 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface">Moments Captured in Motion</h3>
+</div>
+<a class="group flex items-center gap-4 font-label-caps text-label-caps text-primary uppercase border-b border-primary pb-2 hover:gap-6 transition-all duration-300" href="#">
+                        View Full Gallery
+                        <span class="material-symbols-outlined">arrow_right_alt</span>
+</a>
+</div>
+<!-- Masonry-style Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[900px]">
+<div class="md:col-span-2 md:row-span-2 overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A wide-angle cinematic shot of an Indian Sangeet audience, hundreds of guests dressed in formal luxury ethnic wear, cheering as a performance happens on a massive stage. The venue is draped in deep velvet blues with thousands of fairy lights overhead resembling a starry night sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoYqiUwFzZ_WkIoFI8s8cRcpdqztNY0lt0Xsnt_SDO3RANxUJpxLjdrCtdw2ycnuYHx4XQUzueZrSK2RO7kt0kuVgBQuSR7dZ7HQr4tPZzlvUWOaCrwxErMTdnHwRw9od5ao_bbyVBZAxh7qoHONhHM9b_J9htqYYrRHRbL94JZcXIWmmXvm0Q3jT3bE8rQ0Z1TlVnepaUPDhSiautockCNKBKmK2jNuznWDJdpGHMh6hSxtGDNp3dWtZasD2UrKr_NtjCHOLcJBGu"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<h5 class="text-white font-headline-md text-headline-md mb-2">The Grand Entrance</h5>
+<p class="text-white/70 font-label-caps text-[10px] uppercase tracking-widest">Udaipur, 2023</p>
+</div>
+</div>
+<div class="md:col-span-2 overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Professional DJ console at a high-end wedding party, with hands of a DJ manipulating the decks. The background is a blur of purple and gold LED lights from the dance floor. The image has a crisp, high-fidelity look with sharp focus on the equipment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu-OxZ3Nz49yDELuhClmU0zWdlPHWTBaBt1S3-G6A7avT0wFY5l-1OZ29T9OE5Ssk2D3oIq6KUB7ZD32Rpv4v0pFI31CdOK9AfUF-axudisJf03z2wNrpGgS--mdEgvX2SnBtUb2dRvi4izEbQzKlxVJkFtYidnoCkZC_FbhMb1FJUpxBk_XGyqPRDqKyHHsIjH8vU5iV0b17lA8EpJAbs8KBbHNWI0Mqv-Uv92gKj5YSI9bI_f6ntEmbq07uTj5iTWHHUvPH-uhDC"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+</div>
+<div class="overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Action shot of a group of bridesmaids performing a choreographed Bollywood dance on a stage. They are wearing matching gold and peach lehengas. The stage floor is polished and reflects the dramatic theatrical lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL0so2XYV0D-V_vqnmtkpvYHWZQGbTRW2mqodeMzBckHy5MV1zIBuWZQl3Qc6FeORyNFAzqh1I1T_ppoJ6csUSgmLrsI3Y8crGBbKwRHiRRYnDosrIfMjWrbhQsaReWC5R9oKu96y-UJvfygOr78v7a4Pv-PuKPleEzuQvqOWT5YYX_7wiwEaYp_GnuMIv1F0COHU3g5sL4Ohtv_p31asC4qWj5kP4wZYOFMNKP6XrTzLp4QbIiKAe6ButDhOG6799jXpLgmKt_ddz"/>
+</div>
+<div class="overflow-hidden relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of a luxury centerpiece at a Sangeet, featuring crystal vases, floating candles, and orchids. The background is bokeh-blurred lights from the main stage, capturing the 'Midnight Luxury' palette of purples and golds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJf430qflil42O145zbBLHzL7QTTEukI1LGk8jqM-yRm1p785o32tvkWOwiFtOXL9Pwo0lbD-6Cz0pkpIJ61E0w29D9WKYMF43MYXMt8v6N3ttnGrZ9kVgm5O_inJxcMWlr66H-Ro_pugPRFUC8FNx_ABWznZKI0ti3Xtqr5unIPfcpT1B18q12WlePrp8ycKeTlRMhEIcEx0K-6TN3eXqAYXT8ZnbaiWO8k6Xhe41IB17aYyhUviN1JOAdvomxq-vXDHFCMLYTGjf"/>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="relative py-16 md:py-section-padding bg-midnight overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] gilded-gradient"></div>
+<div class="max-w-container-max-width mx-auto px-6 md:px-margin-edge text-center">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary-fixed-dim mb-8">Ready to ignite the stage?</h2>
+<p class="font-body-lg text-body-lg text-surface-container-high max-w-2xl mx-auto mb-12">
+                    Let us curate an evening that pulsates with your personality. From the first beat to the final bow, your Sangeet night will be a masterpiece of emotion and entertainment.
+                </p>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-12 py-6 font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 stage-glow rounded-none">
+                    Start Planning Your Vision
+                </button>
+</div>
+<!-- Background Glows -->
+<div class="absolute -top-48 -left-48 w-96 h-96 bg-luxury-purple/20 blur-[120px] rounded-full"></div>
+<div class="absolute -bottom-48 -right-48 w-96 h-96 bg-primary/10 blur-[120px] rounded-full"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 md:py-section-padding bg-surface-container-low dark:bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-margin-edge max-w-container-max-width mx-auto gap-gutter">
+<div class="flex flex-col items-center md:items-start gap-4">
+<a href="Home.html" class="font-headline-md text-headline-md text-primary">Vivaha Vedika</a>
+<p class="font-body-md text-body-md text-on-surface-variant">Â© 2024 Vivaha Vedika. The Cinematic Heirloom.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-gutter">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Pinterest</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+
+
+</body></html>
+
+
+
+
+
+
+
+

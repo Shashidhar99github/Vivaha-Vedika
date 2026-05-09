@@ -1,0 +1,516 @@
+﻿<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vivaha Vedika | Mehendi Ceremony</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(252, 249, 248, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed": "#261a00",
+                      "primary-fixed": "#ffdea5",
+                      "surface-container-low": "#f6f3f2",
+                      "secondary": "#5f5e5b",
+                      "on-primary-fixed": "#261900",
+                      "inverse-on-surface": "#f3f0ef",
+                      "on-background": "#1c1b1b",
+                      "tertiary-container": "#c0a161",
+                      "surface-container": "#f0eded",
+                      "outline-variant": "#d1c5b4",
+                      "on-error-container": "#93000a",
+                      "inverse-primary": "#e9c176",
+                      "on-error": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-high": "#eae7e7",
+                      "tertiary": "#745b22",
+                      "secondary-fixed": "#e5e2dd",
+                      "inverse-surface": "#313030",
+                      "error": "#ba1a1a",
+                      "primary": "#775a19",
+                      "on-secondary-fixed-variant": "#474743",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-container": "#4d3700",
+                      "surface-tint": "#775a19",
+                      "tertiary-fixed": "#ffdf9e",
+                      "surface-dim": "#dcd9d9",
+                      "tertiary-fixed-dim": "#e4c27e",
+                      "surface-bright": "#fcf9f8",
+                      "on-primary": "#ffffff",
+                      "secondary-container": "#e5e2dd",
+                      "on-secondary-container": "#656461",
+                      "on-primary-fixed-variant": "#5d4201",
+                      "on-primary-container": "#4e3700",
+                      "background": "#fcf9f8",
+                      "surface-container-highest": "#e5e2e1",
+                      "primary-fixed-dim": "#e9c176",
+                      "secondary-fixed-dim": "#c9c6c2",
+                      "surface-variant": "#e5e2e1",
+                      "error-container": "#ffdad6",
+                      "on-surface-variant": "#4e4639",
+                      "surface": "#fcf9f8",
+                      "primary-container": "#c5a059",
+                      "on-secondary-fixed": "#1c1c19",
+                      "outline": "#7f7667",
+                      "on-surface": "#1c1b1b",
+                      "on-tertiary-fixed-variant": "#5a430b",
+                      "on-tertiary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "32px",
+                      "container-max-width": "1440px",
+                      "section-padding": "128px",
+                      "margin-edge": "64px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Playfair Display"],
+                      "body-md": ["Hanken Grotesk"],
+                      "body-lg": ["Hanken Grotesk"],
+                      "headline-md": ["Playfair Display"],
+                      "label-caps": ["Hanken Grotesk"],
+                      "display-xl": ["Playfair Display"]
+              },
+              "fontSize": {
+                      "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                      "label-caps": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                      "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Splash Screen Overlay -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    #splash-screen {
+        position: fixed;
+        inset: 0;
+        z-index: 999999;
+        background-color: #4A3525;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #F5E6D3;
+        transition: opacity 0.8s ease-out;
+    }
+    
+    .splash-logo-container {
+        position: relative;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .splash-drawing-text {
+        font-family: 'Great Vibes', cursive;
+        font-size: 100px;
+        fill: transparent;
+        stroke: #F5E6D3;
+        stroke-width: 2px;
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        animation: draw 2.5s ease-in-out forwards, fillText 0.8s 2s forwards ease-in-out;
+    }
+
+    @media (max-width: 640px) {
+        .splash-drawing-text {
+            font-size: 60px;
+        }
+    }
+
+    @keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes fillText {
+        to {
+            fill: #F5E6D3;
+            stroke-width: 0;
+        }
+    }
+
+    .splash-progress-container {
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .splash-progress-text {
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .splash-progress-bar-bg {
+        width: 100%;
+        height: 2px;
+        background-color: rgba(245, 230, 211, 0.2);
+        position: relative;
+    }
+
+    .splash-progress-bar-fill {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #F5E6D3;
+        width: 0%;
+        transition: width 0.1s linear;
+    }
+</style>
+
+<div id="splash-screen">
+    <div class="splash-logo-container">
+        <svg width="600" height="150" viewBox="0 0 600 150" class="w-full max-w-[600px]">
+            <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" class="splash-drawing-text">Vivaha Vedika</text>
+        </svg>
+    </div>
+    <div class="splash-progress-container">
+        <div class="splash-progress-text" id="splash-progress-text">1%</div>
+        <div class="splash-progress-bar-bg">
+            <div class="splash-progress-bar-fill" id="splash-progress-fill"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Prevent scrolling while loading
+    document.body.style.overflow = 'hidden';
+
+    const splashScreen = document.getElementById('splash-screen');
+    const progressText = document.getElementById('splash-progress-text');
+    const progressFill = document.getElementById('splash-progress-fill');
+
+    const duration = 2800; 
+    const interval = 30; 
+    const steps = duration / interval;
+    let currentStep = 0;
+    
+    const loadingTimer = setInterval(() => {
+        currentStep++;
+        let percent = Math.min(Math.floor((currentStep / steps) * 100), 100);
+        
+        let displayPercent = percent;
+        if (percent > 90) {
+            displayPercent = 90 + Math.floor((percent - 90) * (currentStep % 2));
+            if (percent === 100) displayPercent = 100;
+        }
+
+        progressText.textContent = displayPercent + '%';
+        progressFill.style.width = displayPercent + '%';
+
+        if (percent >= 100) {
+            clearInterval(loadingTimer);
+            setTimeout(() => {
+                splashScreen.style.opacity = '0';
+                splashScreen.style.pointerEvents = 'none';
+                document.body.style.overflow = ''; // restore scrolling
+                setTimeout(() => splashScreen.remove(), 800);
+            }, 400);
+        }
+    }, interval);
+</script>
+<!-- End Splash Screen -->
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl border-b border-primary/10 shadow-sm transition-all duration-500 ease-in-out">
+<div class="flex justify-between items-center w-full px-6 md:px-margin-edge max-w-container-max-width mx-auto py-6">
+  <a class="flex items-center gap-[12px] text-primary dark:text-primary-fixed-dim transition-opacity hover:opacity-80" href="Home.html">
+        <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'wght' 200;">diamond</span>
+        <span class="font-headline-md text-[20px] tracking-[0.1em] capitalize">Vivaha Vedika</span>
+      </a>
+  <!-- Desktop Nav -->
+  <div class="hidden md:flex items-center gap-10">
+    <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html">Home</a>
+    <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#portfolio">Portfolio</a>
+    <div class="relative group py-4">
+      <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300 flex items-center gap-1" href="Home.html#services-section">Services <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+      <div class="absolute left-0 top-[100%] w-56 bg-surface dark:bg-surface-dim shadow-xl border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col py-2 z-50">
+        <a href="BrideNalugu.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Bride Nalugu</a>
+        <a href="GroomNalugu.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Groom Nalugu</a>
+        <a href="couplehaldi.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Couple Haldi</a>
+        <a href="Mehndi.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Mehendi</a>
+        <a href="sangeeth.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Sangeet</a>
+        <a href="wedding.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Wedding</a>
+        <a href="reception.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Reception</a>
+        <a href="cocktail.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Cocktail Party</a>
+        <a href="Birthday.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Birthday</a>
+      </div>
+    </div>
+    <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#philosophy">Philosophy</a>
+    <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#journal">Journal</a>
+    <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#inquire">Inquire</a>
+  </div>
+  <!-- Book CTA + Hamburger -->
+  <div class="flex items-center gap-3">
+    <button onclick="window.location.href='Consult.html'" class="bg-primary text-on-primary font-label-caps text-label-caps px-8 py-3 tracking-widest hover:bg-primary-container transition-all duration-300 hidden md:block">Book a Consult</button>
+    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-full hover:bg-primary/10 transition-colors" aria-label="Open menu">
+      <span class="material-symbols-outlined text-primary text-2xl">menu</span>
+    </button>
+  </div>
+</div>
+</nav>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-[200] pointer-events-none">
+  <div id="mobile-menu-backdrop" class="absolute inset-0 bg-inverse-surface/60 opacity-0 transition-opacity duration-300 pointer-events-none"></div>
+  <div id="mobile-menu-drawer" class="absolute top-0 right-0 h-full w-72 bg-surface shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+    <div class="flex items-center justify-between px-8 py-6 border-b border-outline-variant">
+      <span class="font-headline-md text-primary tracking-[0.2em] uppercase text-sm">Menu</span>
+      <button id="mobile-menu-close" class="rounded-full p-2 hover:bg-surface-variant transition-colors" aria-label="Close menu">
+        <span class="material-symbols-outlined text-on-surface">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col px-8 py-8 gap-5 flex-1 overflow-y-auto">
+      <a href="Home.html" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Home</a>
+      <a href="Home.html#portfolio" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Portfolio</a>
+      <div class="flex flex-col border-b border-outline-variant pb-4">
+        <a href="Home.html#services-section" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors mb-4">Services</a>
+        <div class="flex flex-col pl-4 gap-3 border-l border-outline-variant/30 ml-2">
+          <a href="BrideNalugu.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Bride Nalugu</a>
+          <a href="GroomNalugu.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Groom Nalugu</a>
+          <a href="couplehaldi.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Couple Haldi</a>
+          <a href="Mehndi.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Mehendi</a>
+          <a href="sangeeth.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Sangeet</a>
+          <a href="wedding.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Wedding</a>
+          <a href="reception.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Reception</a>
+          <a href="cocktail.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Cocktail Party</a>
+          <a href="Birthday.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Birthday</a>
+        </div>
+      </div>
+      <a href="Home.html#philosophy" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Philosophy</a>
+      <a href="Home.html#journal" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Journal</a>
+      <a href="Home.html#inquire" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors">Inquire</a>
+    </nav>
+    <div class="px-8 pb-8">
+      <button onclick="window.location.href='Consult.html'" class="w-full bg-primary text-on-primary font-label-caps text-label-caps tracking-widest uppercase px-8 py-4 hover:bg-primary-container transition-colors duration-300">Book a Consult</button>
+    </div>
+  </div>
+</div>
+<script>
+(function() {
+  var menu = document.getElementById('mobile-menu');
+  var backdrop = document.getElementById('mobile-menu-backdrop');
+  var drawer = document.getElementById('mobile-menu-drawer');
+  var closeBtn = document.getElementById('mobile-menu-close');
+  var menuBtn = document.getElementById('mobile-menu-btn');
+  function openMenu() {
+    menu.classList.remove('pointer-events-none');
+    backdrop.classList.remove('opacity-0','pointer-events-none');
+    backdrop.classList.add('opacity-100','pointer-events-auto');
+    drawer.classList.remove('translate-x-full');
+    drawer.classList.add('translate-x-0');
+  }
+  function closeMenu() {
+    backdrop.classList.remove('opacity-100','pointer-events-auto');
+    backdrop.classList.add('opacity-0','pointer-events-none');
+    drawer.classList.remove('translate-x-0');
+    drawer.classList.add('translate-x-full');
+    setTimeout(function(){ menu.classList.add('pointer-events-none'); }, 300);
+  }
+  if (menuBtn) menuBtn.addEventListener('click', openMenu);
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  if (backdrop) backdrop.addEventListener('click', closeMenu);
+})();
+</script>
+
+<main class="pt-[112px]">
+<!-- Hero Section -->
+<section class="relative h-[921px] w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A luxurious Mehendi ceremony setup with vibrant marigold garlands in turmeric yellow and orange hanging from a rustic wooden ceiling. Rich emerald green drapes and pink floral arrangements frame the space. The lighting is golden and cinematic, capturing a celebratory yet serene pre-wedding atmosphere in a high-end Indian estate." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBK6kV1pqtwrdM-TuvY0p5XSYlEJkWWzgIWTNzMfmtfApxSzX8e2oPndCHjs9lCNaCsDoAFj8xjiO6XvIRmV2gkVl5jwK_zEOyDeA7438fCpHwdrW1iAp1MYJI6gFsAcqibqzpC4Da_fiPGOKDAVnJnDzGXKXq4n215cF26sV7xaImMNpjyMweKr8w2Y3yY5QKyiZOTQU6enxTJEm8PwSyGiSV7nXpOYmgr1LdXGvwE3VWOqEWlcAE9eu-YljAbW9aOH_qeIc0RjiJW')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="relative h-full flex flex-col justify-end items-start px-6 md:px-margin-edge pb-24 max-w-container-max-width mx-auto">
+<span class="font-label-caps text-label-caps text-primary-fixed tracking-[0.3em] mb-4">Colors, Traditions &amp; Joyful Celebrations</span>
+<h1 class="font-display-xl text-headline-md md:text-headline-lg md:text-display-xl text-white max-w-4xl mb-8">Elegant Mehendi Celebrations Filled With Art, Music &amp; Emotions</h1>
+<div class="flex gap-6">
+<button class="bg-primary text-on-primary px-8 py-4 font-label-caps text-label-caps hover:bg-primary-container transition-all duration-300 shadow-xl">Plan Your Mehendi Celebration</button>
+<button class="border border-white text-white px-8 py-4 font-label-caps text-label-caps hover:bg-white/10 transition-all duration-300 backdrop-blur-sm">Explore Mehendi Gallery</button>
+</div>
+</div>
+</section>
+<!-- Narrative Section -->
+<section class="py-16 md:py-section-padding px-6 md:px-margin-edge max-w-container-max-width mx-auto">
+<div class="grid grid-cols-12 gap-gutter items-center">
+<div class="col-span-12 md:col-span-5 flex flex-col gap-8">
+<div class="h-px w-24 bg-primary"></div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary">A Symphony of Henna &amp; Heritage</h2>
+<p class="font-body-lg text-body-lg text-secondary leading-relaxed">
+                        The Mehendi ceremony is more than just an application of intricate art; it is the heartbeat of the pre-wedding festivities. At Vivaha Vedika, we curate an emotional narrative where every swirl of henna tells a story of love. We blend the vibrant energy of traditional Indian folk music with the sophisticated restraint of contemporary luxury, creating a sanctuary of joy for the bride and her kin.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        From the fragrant scent of fresh marigolds to the rhythm of the dhol, we orchestrate a cinematic atmosphere that honors the depth of heritage while embracing modern elegance.
+                    </p>
+</div>
+<div class="col-span-12 md:col-span-7 relative">
+<div class="grid grid-cols-2 gap-8 items-start">
+<div class="space-y-8 pt-12">
+<img class="w-full aspect-[3/4] object-cover shadow-2xl rounded-sm" data-alt="Close-up of a bride's hands featuring highly detailed and intricate bridal mehendi patterns with peacock and floral motifs. The lighting is soft and directional, highlighting the rich dark stain of the henna against her skin and gold jewelry. The aesthetic is luxurious and intimate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFevV00EF7MHrJL2EtHD6uFUJl6gKCwPgBCdyc-nGB5g86Wc2LvZWXrsPyispyy52TzpUHBdUg-N2E5f7WMEpqy5lBrpHZDvVunyYnBKCGGJbzOguCxQeiK1fh-9FvXThfejG28rIRJk5VBac5yCEipfhbeK4VmGxcr0I1k6qMJVqaI4N93qRXqlzYd8XfkGglXnkXUGsNAutx79EX7RrrwYdGX-a1cWHCeImneJOC1oOfOXDManDBIeS4ODp8MXPbLS3uxxA_rAjy"/>
+<img class="w-full aspect-square object-cover shadow-2xl rounded-sm" data-alt="A luxurious Mehendi lounge setup featuring low-seating arrangements with emerald green and turmeric yellow velvet cushions. Delicate gold-accented side tables hold brass bowls filled with pink rose petals. The scene is framed by flowing ivory silks and hanging greenery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTmZGdchwZF4xLlbmmQGiwGW_RucmWxa_cMNtkR_q1CZ6N0eZt5yPWrCkjidxwkOxpFoK7g3wCSxiw-ls0O0EpP45ZavFWmzhJaGn_nK6SGmIUG8B690XH5stv8nuikXgr9r814GXgQUBV15_3f1l4R2tMrcyqi8PiGYlA33x4ifuUM5WvL4rfAI2CVyWna5T4-gdderGTQpqerhuKYbm_SjATkcNwvF6GOsi3iEs3HugrDTNibFLMuW8swzr0N7YCCH4Ow36yHV1z"/>
+</div>
+<div class="space-y-8">
+<img class="w-full aspect-[4/5] object-cover shadow-2xl rounded-sm" data-alt="Atmospheric shot of a Mehendi celebration outdoors at sunset. The warm golden light filters through a canopy of hanging yellow marigolds and clear glass globes with tea lights. Guests are seen in soft-focus dancing in vibrant traditional attire." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD84ggjpeowMc3XwEg0WtiSVxXewdASxmgGbxdaztvILZvtqM9gL2bvT-9AkqDAW6g01zm2xTy-MkfVHeLAo6DxuZEuDtFne1pAzd9XU2QiZqaciLm_z9IiSsfLPy1oyIPnj8-l4AqcUUilkx9l9cYsmafEhWcHwXRsCRWzWgSVc9FIFnTNIAHEXU8aIWvvCXis4SoAO7_-3gU-dujbKLbgSodQll0rJM-mpwQVMIO-AoWd0GbCudmvoff2wfMZoEwFiHhFZmDGQSC8"/>
+</div>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -top-12 -right-12 w-48 h-48 border border-primary/20 rounded-full flex items-center justify-center opacity-40">
+<span class="material-symbols-outlined text-primary text-6xl">spa</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Grid (Cards) -->
+<section class="py-16 md:py-section-padding bg-surface-container-low">
+<div class="px-6 md:px-margin-edge max-w-container-max-width mx-auto">
+<div class="text-center mb-24">
+<span class="font-label-caps text-label-caps text-primary tracking-widest block mb-4">CURATED EXPERIENCES</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg">Elements of a Cinematic Mehendi</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="group relative overflow-hidden bg-white shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Close up of a professional henna artist applying fine, delicate strokes of mehendi on a palm. The focus is sharp on the metal cone and the dark paste, with a blurred background of festive floral decor in pink and gold." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo5YVk_RXxaI-czYwttKL0VlsniyI2FQ7WeQo31yoD2t3oEhJjPtGuGpdRRZ_m-iIEjTHjDXZzuDTcfXVCMXE4mvnihJxbpUp4hcneCbI_WtgYwur8on8TwEX6OFTkrTlPO7kxPaXlAz7KqvLYJjIfFWHmssoDHglLEtn82BolziI9W6UoXDDQgftrTBd_V0Avr9OZ3BCyCNM9XKEeIfESSeHu1dgfX3LeDyV0T29cwsfrVy7Ozo7TAMgPbqHjIAyw1Q6H6_BPuFCI"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-[24px] mb-2">Bridal Mehendi Styling</h3>
+<p class="text-secondary font-body-md text-sm">Bespoke henna patterns that mirror your unique bridal narrative.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative overflow-hidden bg-white shadow-sm hover:shadow-xl transition-all duration-500 mt-8 md:mt-0">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Luxury floral decor for a Mehendi stage featuring a wall of marigolds and fresh pink lilies. Suspended brass lanterns and emerald green tassels add a regal bohemian touch to the festive setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-XAy7wQhM-Ba7heZLyhdXaI3SR-Llo6Ymsmq55xl2i9hsG6bVlhwHEzNL_kpM8XILYC5AXEwia6gEJAouz4oeGTf60bhtztDtf_n8DRDbkpNoSUQB-MxmvaIrhQw6mfNV8-QFYNsfle4ywmG4wiqpZqU3yZFiL05SSF5jvClzFZ_YyFJCLKRFF0YUIxr2ct1eQ8yUWCaggO8RvHIkMKaWCoKbOyzZrx2YAAqrtCkRUy5WKQzSATxm74qyuSZO1Kp3PiNo6vLHuUls"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-[24px] mb-2">Floral Decor Concepts</h3>
+<p class="text-secondary font-body-md text-sm">Immersive botanical installations using seasonal Indian blooms.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative overflow-hidden bg-white shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A live musical performance at an Indian wedding with traditional instruments like the dhol and sitar. The musicians are dressed in coordinated turmeric yellow outfits, playing under a canopy of fairy lights and vibrant greenery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOkx1IUzNM5ic3MAnswYYwXUiSpJIHJeafuHW1MtwLf3n10HCCOhrywFqAKZcvhUDtBu8SMv_Sxju2eSaLFW4Enw5zBcZFvqAXa_5Oe-wT7IKywgS5le2177GjOsm8kiiVGFXX2atqaY0982e6ipF5KhGziSIm3fCw5PJqHruwlabaEEhWlnY1tgYON2ZXRFczlqB-C5Y78o7qW-wynBOrSXW8bBpyURdxB_OP3OQsaM4H-L50kkviFqiFll5xRdWuI4RtMV9vT3oQ"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-[24px] mb-2">Live Music &amp; Entertainment</h3>
+<p class="text-secondary font-body-md text-sm">Curated folk singers and rhythmic dhol players to spark the joy.</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative overflow-hidden bg-white shadow-sm hover:shadow-xl transition-all duration-500 mt-8 md:mt-0">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A luxury seating arrangement for a bridal couple featuring an oversized swing decorated with pink roses and yellow jasmine. Placed on a traditional hand-woven rug with plush emerald cushions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8IRzpsrtIyN7DCWhbCfmMQwv018i3WsxTWc5q1F_EJ9jd_sVG2ViKP2T1QDM75Nxe0IkVboTafNuvRPoc1Mz2EC_Exw5du-5ZumSIVSd2sZ9B-uRp_mYjRIXL_kOPvBZLZ4LKxQ7eSawWkmMayGzNIPhXWFOe_86dm0CPZqe8qDCkbHT9fRIcSwS9bBZiPY6LFdTYV3AsdfsMO3tUWIJF5XexcGvPChpq0_CXiQGGt5Ulnc_HKCDOwGGkdMvaQo4DF2xtkL229KLQ"/>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md text-[24px] mb-2">Couple Lounge Setup</h3>
+<p class="text-secondary font-body-md text-sm">Intimate and regal seating designed for cinematic captures.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-16 md:py-section-padding px-6 md:px-margin-edge max-w-container-max-width mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps text-primary mb-4 block">THE VISUAL DIARY</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg">Mehendi Gallery</h2>
+</div>
+<button class="flex items-center gap-2 font-label-caps text-label-caps text-primary hover:gap-4 transition-all duration-300">VIEW ALL STORIES <span class="material-symbols-outlined">trending_flat</span></button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-8">
+<img class="w-full aspect-[4/5] object-cover" data-alt="Stunning portrait of a bride in a vibrant pink lehenga laughing while henna is being applied. Soft bokeh of yellow marigolds in the background. High-key lighting, professional wedding photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAesynqKkBrMCq2Ka2-b1BV8uSGSD6GjtXI-x8Q5a7c3zHydrqS7-LRYY3fTJA9hDaNskKCEeMuJ-Vq_W-y9dLcc7neHdHXsLOwdP9LB6YKiXS_aKOARXijfdAmZuuJBX6mbat_pPARRVrAemJEdoujm6KzjpIafVWKJGkmOQX4TeD5tIBioN6YXqD5zJeWDPYKYbTl9_v359HtlqeiNL2GoLoqxPJZOTqjChZmFoIig1vjjNl7z-WtjRl3C9WAPuN8e6a0wKOJVkr"/>
+<img class="w-full aspect-square object-cover" data-alt="Artistic flat-lay of Mehendi ceremony essentials: brass bowls of henna paste, fresh jasmine buds, a silver mirror, and colorful glass bangles on an ivory linen background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPnvbgZ0kPWYZog4VQ18Kasb8KiEFiqqV0ULkeJyjJy-yEG3lK-BzPBeZ82eoRMElEIqfQOuQygecELuTEt48Zaio0rgDMnx-dMjjBAd0uqFBXFFIU3WimylJpHrmhm66L9RQVITvNJ_CRCnyB_7HEXw5lYgWCvs5Qyc3fGo2Mf6IykSq8Ji69MPkd7-gWa0EsHIpgyy2oC5FDWZU-4K1jxvAbvywTq8XUEFwjtE2SUidAyWm9arM1bhRRQ6WiHo9E2UJTuU8Twg8I"/>
+</div>
+<div class="space-y-8 md:-mt-16">
+<img class="w-full aspect-[2/3] object-cover shadow-xl" data-alt="Full shot of an ornate outdoor Mehendi stage with emerald green drapes and giant golden frames filled with pink flowers. The floor is covered with traditional white and gold rugs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo13Kabkml3w_EzK_EYm6IwT100nJBcHVcd6X1quU2V_wQzbYi7ZiM-iafu7aSbv2sJvLySGDFln4HKGNlH5YH3T5b_O82PzkVfhk8nOY-tzaruCkM-N1WlT2VVZtfSK1jxxlBbHooPBAMvlkZNKdmwHUuaPEUJsuynuMvfhT3PyNnpvchWZgwVFjwwxbxemrNo9lS_HMqN7sS3HJVtdnWRcHLgRb4KPD67wSJt8PmdMn2OKBRqJzDbXlLh9_s-43uFupqEFgB_aDT"/>
+<img class="w-full aspect-[4/3] object-cover" data-alt="Low angle shot of bridesmaids hands all decorated with mehendi, held together in a circle. The vibrant colors of their silk outfits create a rainbow of turmeric, emerald, and pink." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgz2e4d7peOD6O_CMYQa4EO0-FUhldcAEFsBSwH3pJkeQNpR_Eu46YeXdCHtkJ242Yyvu0TcKDQOfArpbFn-sVQhzYMwzPF8kMNd9EdbEXO0elhxi8-iLCBteVCEhy-eB93Wo-kkcEHzHCHU-u8tMvB7eX3_BJm9Siv2Tv1KvCSPpf8KkkYqNrMnm8NY17xCWrxhaWR1LVfXbfiYOluEvmPJt0fh2m48kSdayB7VpirrOb6YZrKoJJjV_GuL3c5iJ62eKynOyVdLbl"/>
+</div>
+<div class="space-y-8">
+<img class="w-full aspect-square object-cover" data-alt="Macro shot of intricate mehendi staining the skin of a bride. Deep burgundy hues with crystal embellishments stuck to the skin for a modern luxury twist on traditional art." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkViXMxNATQ_6ER2sV-em-Iee9IKo0aLuTIKavxGHqm23MgF4Ias3BbJUeZQWPCF5QKMiRatK4jyT2omDoaHsDx545Rbmf9dvkXktBnIrP_eRKeGWXMYYtXMtnQe3mK5bYiVJQOFv4TdMWx6TIGP6lek4woD64JpE0cj6Vw0iRMfaFdGbWr5hrjOIYc9NFyT8ekNS3KAWfy8pL_7JgfU43zie5-6jy2_URa56uj1Dpa0wCyK0HbqLBTwkctJFSrlf6G31Cp3PggOj4"/>
+<img class="w-full aspect-[4/5] object-cover" data-alt="Groom getting a small mehendi design on his palm while family members laugh in the background. Candid emotional moment in a sun-drenched courtyard during a luxury Indian wedding." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmP1mAQU6vtaoKBgUe7m0zqUY2E8jzqProtsYndTlznRKKnKE7gXSpZs7ejUoxzrOGmeOQ9tkFrNaXjZMvuU46yEMeFCvYxNwHRirFzFBolshuFj-WEWOesL9cZ6g4MMZChY5ScTIaJPqItFci5Maw5TJQxRrXFm00dpJS5uFD-A9gINocPXxiJC1ccsfin7PdZzUFydBUf3xFPb-b3FBE0YQ1ZgKg6sQlZ5j_oh2GGWebx6v1nontR8wl0P1C1cEGV36HrFU1ryd4"/>
+</div>
+</div>
+</section>
+<!-- Gilded Divider -->
+<div class="flex items-center justify-center py-24 px-6 md:px-margin-edge">
+<div class="w-full max-w-container-max-width flex items-center gap-8 opacity-20">
+<div class="h-[1px] flex-grow bg-primary"></div>
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">spa</span>
+<div class="h-[1px] flex-grow bg-primary"></div>
+</div>
+</div>
+<!-- CTA Section -->
+<section class="py-16 md:py-section-padding bg-surface-container-highest relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyBeqiJ6zNb-XTcldhEH2zY-ZYgxS_YOpxJKF_oE1yu6DOft0pYn3eCWX4oyVHGVbWL6ng1zAtIS4Ly2REMd4HM8IVIZEULEh3qtOkW8Vci0oY7vwam0DK5Q3nXyxg497P6pPTa1sAGchtPlch7NBTQvsk_V3V3_x7XAR3YgNAxekPuSaBWDyVsZb-q1vE3R6e8eWTjnTxdCzUGBNiD_GExJOsjosqGxadmQ3getl6-73keYBKaKfktaZs3m_DEhlJ5dhAi-1F4pNL')"></div>
+<div class="px-6 md:px-margin-edge max-w-4xl mx-auto text-center relative z-10">
+<h2 class="font-display-xl text-headline-md md:text-headline-lg md:text-display-xl text-primary mb-8">Begin Your Story With Us</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-12">Allow us to transform your Mehendi ceremony into a cinematic masterpiece. From conceptualizing the theme to the final stroke of henna, every detail is orchestrated with love and precision.</p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<a class="bg-primary text-on-primary px-12 py-5 font-label-caps text-label-caps hover:bg-primary-container transition-all duration-300 shadow-lg tracking-[0.2em]" href="#">INQUIRE NOW</a>
+<a class="border border-primary text-primary px-12 py-5 font-label-caps text-label-caps hover:bg-primary hover:text-white transition-all duration-300 tracking-[0.2em]" href="#">VIEW ALL SERVICES</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-lowest w-full py-16 md:py-section-padding border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-margin-edge max-w-container-max-width mx-auto gap-gutter">
+<a href="Home.html" class="font-headline-md text-headline-md text-primary">Vivaha Vedika</a>
+<div class="flex flex-col items-center md:items-end gap-4">
+<div class="flex gap-8">
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Instagram</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Pinterest</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+</div>
+<p class="text-secondary dark:text-primary-fixed-dim font-body-md text-body-md opacity-60">Â© 2024 Vivaha Vedika. The Cinematic Heirloom.</p>
+</div>
+</div>
+</footer>
+
+
+</body></html>
+
+
+
+
+
+
+
+

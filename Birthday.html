@@ -1,0 +1,533 @@
+﻿<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vivaha Vedika | Luxury Birthday Celebrations</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&amp;family=Hanken+Grotesk:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(252, 249, 248, 0.5);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#313030",
+                        "surface-tint": "#775a19",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dcd9d9",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#ffdf9e",
+                        "secondary-fixed": "#e5e2dd",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e5e2e1",
+                        "outline-variant": "#d1c5b4",
+                        "outline": "#7f7667",
+                        "tertiary-container": "#c0a161",
+                        "primary-fixed-dim": "#e9c176",
+                        "on-primary-fixed": "#261900",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#e4c27e",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-container-high": "#eae7e7",
+                        "on-primary-container": "#4e3700",
+                        "on-tertiary-fixed": "#261a00",
+                        "surface-container": "#f0eded",
+                        "surface": "#fcf9f8",
+                        "secondary-container": "#e5e2dd",
+                        "tertiary": "#745b22",
+                        "primary-fixed": "#ffdea5",
+                        "primary": "#775a19",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "on-surface-variant": "#4e4639",
+                        "on-surface": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "background": "#fcf9f8",
+                        "surface-variant": "#e5e2e1",
+                        "inverse-primary": "#e9c176",
+                        "primary-container": "#c5a059",
+                        "on-tertiary-container": "#4d3700",
+                        "on-secondary-fixed": "#1c1c19",
+                        "secondary-fixed-dim": "#c9c6c2",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fcf9f8",
+                        "on-tertiary-fixed-variant": "#5a430b",
+                        "on-background": "#1c1b1b",
+                        "secondary": "#5f5e5b",
+                        "on-secondary-fixed-variant": "#474743",
+                        "on-secondary-container": "#656461"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-edge": "64px",
+                        "section-padding": "128px",
+                        "gutter": "32px",
+                        "container-max-width": "1440px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Hanken Grotesk"],
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display-xl": ["Playfair Display"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- Splash Screen Overlay -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    #splash-screen {
+        position: fixed;
+        inset: 0;
+        z-index: 999999;
+        background-color: #4A3525;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #F5E6D3;
+        transition: opacity 0.8s ease-out;
+    }
+    
+    .splash-logo-container {
+        position: relative;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .splash-drawing-text {
+        font-family: 'Great Vibes', cursive;
+        font-size: 100px;
+        fill: transparent;
+        stroke: #F5E6D3;
+        stroke-width: 2px;
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        animation: draw 2.5s ease-in-out forwards, fillText 0.8s 2s forwards ease-in-out;
+    }
+
+    @media (max-width: 640px) {
+        .splash-drawing-text {
+            font-size: 60px;
+        }
+    }
+
+    @keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes fillText {
+        to {
+            fill: #F5E6D3;
+            stroke-width: 0;
+        }
+    }
+
+    .splash-progress-container {
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .splash-progress-text {
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .splash-progress-bar-bg {
+        width: 100%;
+        height: 2px;
+        background-color: rgba(245, 230, 211, 0.2);
+        position: relative;
+    }
+
+    .splash-progress-bar-fill {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #F5E6D3;
+        width: 0%;
+        transition: width 0.1s linear;
+    }
+</style>
+
+<div id="splash-screen">
+    <div class="splash-logo-container">
+        <svg width="600" height="150" viewBox="0 0 600 150" class="w-full max-w-[600px]">
+            <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" class="splash-drawing-text">Vivaha Vedika</text>
+        </svg>
+    </div>
+    <div class="splash-progress-container">
+        <div class="splash-progress-text" id="splash-progress-text">1%</div>
+        <div class="splash-progress-bar-bg">
+            <div class="splash-progress-bar-fill" id="splash-progress-fill"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Prevent scrolling while loading
+    document.body.style.overflow = 'hidden';
+
+    const splashScreen = document.getElementById('splash-screen');
+    const progressText = document.getElementById('splash-progress-text');
+    const progressFill = document.getElementById('splash-progress-fill');
+
+    const duration = 2800; 
+    const interval = 30; 
+    const steps = duration / interval;
+    let currentStep = 0;
+    
+    const loadingTimer = setInterval(() => {
+        currentStep++;
+        let percent = Math.min(Math.floor((currentStep / steps) * 100), 100);
+        
+        let displayPercent = percent;
+        if (percent > 90) {
+            displayPercent = 90 + Math.floor((percent - 90) * (currentStep % 2));
+            if (percent === 100) displayPercent = 100;
+        }
+
+        progressText.textContent = displayPercent + '%';
+        progressFill.style.width = displayPercent + '%';
+
+        if (percent >= 100) {
+            clearInterval(loadingTimer);
+            setTimeout(() => {
+                splashScreen.style.opacity = '0';
+                splashScreen.style.pointerEvents = 'none';
+                document.body.style.overflow = ''; // restore scrolling
+                setTimeout(() => splashScreen.remove(), 800);
+            }, 400);
+        }
+    }, interval);
+</script>
+<!-- End Splash Screen -->
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl border-b border-primary/10 shadow-sm transition-all duration-500 ease-in-out">
+    <div class="flex justify-between items-center w-full px-6 md:px-margin-edge max-w-container-max-width mx-auto py-6">
+      <a class="flex items-center gap-[12px] text-primary dark:text-primary-fixed-dim transition-opacity hover:opacity-80" href="Home.html">
+        <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'wght' 200;">diamond</span>
+        <span class="font-headline-md text-[20px] tracking-[0.1em] capitalize">Vivaha Vedika</span>
+      </a>
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-10">
+        <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html">Home</a>
+        <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#portfolio">Portfolio</a>
+        <div class="relative group py-4">
+          <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300 flex items-center gap-1" href="Home.html#services-section">Services <span class="material-symbols-outlined text-[16px]">expand_more</span></a>
+          <div class="absolute left-0 top-[100%] w-56 bg-surface dark:bg-surface-dim shadow-xl border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col py-2 z-50">
+            <a href="BrideNalugu.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Bride Nalugu</a>
+            <a href="GroomNalugu.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Groom Nalugu</a>
+            <a href="couplehaldi.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Couple Haldi</a>
+            <a href="Mehndi.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Mehendi</a>
+            <a href="sangeeth.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Sangeet</a>
+            <a href="wedding.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Wedding</a>
+            <a href="reception.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Reception</a>
+            <a href="cocktail.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Cocktail Party</a>
+            <a href="Birthday.html" class="px-6 py-3 font-label-caps text-label-caps hover:text-primary hover:bg-primary/5 transition-colors">Birthday</a>
+          </div>
+        </div>
+        <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#philosophy">Philosophy</a>
+        <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#journal">Journal</a>
+        <a class="text-secondary dark:text-secondary-fixed-dim font-label-caps text-label-caps hover:text-primary transition-colors duration-300" href="Home.html#inquire">Inquire</a>
+      </div>
+      <!-- Book CTA + Hamburger -->
+      <div class="flex items-center gap-3">
+        <button onclick="window.location.href='Consult.html'" class="bg-primary text-on-primary font-label-caps text-label-caps px-8 py-3 tracking-widest hover:bg-primary-container transition-all duration-300 hidden md:block">Book a Consult</button>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-full hover:bg-primary/10 transition-colors" aria-label="Open menu">
+          <span class="material-symbols-outlined text-primary text-2xl">menu</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="fixed inset-0 z-[200] pointer-events-none">
+    <div id="mobile-menu-backdrop" class="absolute inset-0 bg-inverse-surface/60 opacity-0 transition-opacity duration-300 pointer-events-none"></div>
+    <div id="mobile-menu-drawer" class="absolute top-0 right-0 h-full w-72 bg-surface shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+      <div class="flex items-center justify-between px-8 py-6 border-b border-outline-variant">
+        <span class="font-headline-md text-primary tracking-[0.2em] uppercase text-sm">Menu</span>
+        <button id="mobile-menu-close" class="rounded-full p-2 hover:bg-surface-variant transition-colors" aria-label="Close menu">
+          <span class="material-symbols-outlined text-on-surface">close</span>
+        </button>
+      </div>
+      <nav class="flex flex-col px-8 py-8 gap-5 flex-1 overflow-y-auto">
+        <a href="Home.html" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Home</a>
+        <a href="Home.html#portfolio" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Portfolio</a>
+        <div class="flex flex-col border-b border-outline-variant pb-4">
+          <a href="Home.html#services-section" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors mb-4">Services</a>
+          <div class="flex flex-col pl-4 gap-3 border-l border-outline-variant/30 ml-2">
+            <a href="BrideNalugu.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Bride Nalugu</a>
+            <a href="GroomNalugu.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Groom Nalugu</a>
+            <a href="couplehaldi.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Couple Haldi</a>
+            <a href="Mehndi.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Mehendi</a>
+            <a href="sangeeth.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Sangeet</a>
+            <a href="wedding.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Wedding</a>
+            <a href="reception.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Reception</a>
+            <a href="cocktail.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Cocktail Party</a>
+            <a href="Birthday.html" class="font-label-caps text-[11px] text-on-surface-variant hover:text-primary transition-colors">Birthday</a>
+          </div>
+        </div>
+        <a href="Home.html#philosophy" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Philosophy</a>
+        <a href="Home.html#journal" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors border-b border-outline-variant pb-4">Journal</a>
+        <a href="Home.html#inquire" class="font-label-caps text-label-caps text-on-surface tracking-widest uppercase hover:text-primary transition-colors">Inquire</a>
+      </nav>
+      <div class="px-8 pb-8">
+        <button onclick="window.location.href='Consult.html'" class="w-full bg-primary text-on-primary font-label-caps text-label-caps tracking-widest uppercase px-8 py-4 hover:bg-primary-container transition-colors duration-300">Book a Consult</button>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function() {
+    var menu = document.getElementById('mobile-menu');
+    var backdrop = document.getElementById('mobile-menu-backdrop');
+    var drawer = document.getElementById('mobile-menu-drawer');
+    var closeBtn = document.getElementById('mobile-menu-close');
+    var menuBtn = document.getElementById('mobile-menu-btn');
+    function openMenu() {
+      menu.classList.remove('pointer-events-none');
+      backdrop.classList.remove('opacity-0','pointer-events-none');
+      backdrop.classList.add('opacity-100','pointer-events-auto');
+      drawer.classList.remove('translate-x-full');
+      drawer.classList.add('translate-x-0');
+    }
+    function closeMenu() {
+      backdrop.classList.remove('opacity-100','pointer-events-auto');
+      backdrop.classList.add('opacity-0','pointer-events-none');
+      drawer.classList.remove('translate-x-0');
+      drawer.classList.add('translate-x-full');
+      setTimeout(function(){ menu.classList.add('pointer-events-none'); }, 300);
+    }
+    if (menuBtn) menuBtn.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (backdrop) backdrop.addEventListener('click', closeMenu);
+  })();
+  </script>
+
+<main>
+<!-- Hero Section -->
+<section class="relative h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A grand luxury birthday celebration hall in a high-end European venue, featuring soft blush pink and ivory silk drapes. Atmospheric champagne gold lighting illuminates a multi-tiered cake and opulent floral arrangements including peonies and roses. The mood is cinematic, sophisticated, and ethereal, with a royal blue accent lighting subtly highlighting the architectural details. Minimalist and expansive framing allows the luxury decor to breathe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeFlFw3by-VwgCdn5a2rXggoGyziL8GFQbUbPBt-buY8Pg5UUyS1Cv31CVLk-MMcmAm59CKC6C0liEdDVTDhV-H154-Kfa6W-4xs4F1OqKtLIWbe1MNCVH_0Gs34Q2VJTnky7I9kv81a1r-xHlMX8YEeg5pumyPhiA_Govv4mF0xAz5bqY0w-yiiwogVtR7MrAbhx1EyWap3l9HjPQ9S589UWAvyQHX3fjXaUyw4sRcyyJnARNuDt4wAUBt0T0NIC3bjbyJCdYwcOo"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 px-6 md:px-margin-edge max-w-container-max-width mx-auto w-full">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps text-primary uppercase mb-4 block tracking-widest">Celebrate Every Moment In Style</span>
+<h1 class="font-display-xl text-headline-md md:text-headline-lg md:text-display-xl text-on-surface mb-8">Luxury Birthday Celebrations Crafted With Joy &amp; Elegance</h1>
+<p class="font-body-lg text-body-lg text-secondary mb-10 leading-relaxed">
+                        From milestone extravaganzas to intimate family gatherings, we transform your special day into a cinematic heirloom. Our bespoke approach blends modern European aesthetics with the warmth of traditional joy, creating an atmosphere that is as evocative as it is exclusive.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-caps text-label-caps hover:bg-primary-container transition-all duration-300 shadow-lg">Plan Your Celebration</button>
+<button class="border border-primary text-primary px-10 py-4 rounded-full font-label-caps text-label-caps hover:bg-primary-container/10 transition-all duration-300">Explore Birthday Gallery</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Bento Grid -->
+<section class="py-16 md:py-section-padding px-6 md:px-margin-edge max-w-container-max-width mx-auto">
+<div class="text-center mb-24">
+<div class="w-12 h-[1px] bg-primary/30 mx-auto mb-8"></div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface mb-4">The Art of Celebration</h2>
+<p class="font-body-md text-body-md text-secondary max-w-xl mx-auto">Meticulously choreographed experiences designed to capture the essence of your journey.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Feature 1 -->
+<div class="md:col-span-2 group relative overflow-hidden h-[400px]">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-700" data-alt="Close-up of a high-end luxury birthday cake design on a marble table, featuring gold leaf accents and soft pink edible flowers. The background shows a blurred champagne gold balloon installation. Lighting is soft and directional, creating a warm, editorial aesthetic typical of premium lifestyle magazines. The colors are ivory, blush, and champagne gold." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAqc-T5rIOrAPFbehxDRHbMjiZ2tfmeaa2c1O1m2PtrBOQQRtcTF_n7MRjBEsd7bwgcDFl0An3hqqi9fS92Sqi0beCem086VX6qgqGqV51P2S66y5-7wIc5ygvUzGymiy6G0EjpscPFYyTqvMwE5N4k_VW8P267XSjp5qb8Jbh7FDC00-hWY4MZ56bX8HvUN5HqZdkT9xApotMEwO6KktEOTI2wn9ckUKIinB2bDyXUKNjuIzFtDdofGYsV9-uXcna9ijY_bWjiLRG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent flex flex-col justify-end p-8 text-white">
+<h3 class="font-headline-md text-headline-md mb-2">Luxury Theme Decor</h3>
+<p class="font-body-md text-body-md opacity-90">Bespoke environments tailored to your personal narrative.</p>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="md:col-span-1 group relative overflow-hidden h-[400px]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An elegant evening birthday party scene with premium lighting effects. Soft golden spotlights graze against royal blue velvet furniture and ivory floral arrangements. Champagne glasses are captured in a cinematic bokeh, creating a sense of sophisticated revelry. The aesthetic is modern luxury with a focus on depth and atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDICW5AD5-Gul_UbM2KoCqZSIR-JqMic1nkS_d1Pgw5pUS6-2Tqvxo0efV_R3OgBzFzNdgAscxkOFjlTGbQ0xYaLQXvWTZsHdP5x-quqQD0KiJHrI2SK7ob5EKgkOD-21Q8crsTwEVoH1-hgj8oPZk_dd1xpOhOMz3KUQ7r-RCBaZ95ziIcyrIxUcB0qpvu3HO30Vpq1RWkPdEIT6ZW-l6sKVmnFZkI01g2P1WXxKyP7sPu7nQcne0yU3zXFFm0cdj6gVGUDnpFoy7O"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent flex flex-col justify-end p-6 text-white">
+<h3 class="font-label-caps text-label-caps uppercase tracking-widest mb-1">Lighting Effects</h3>
+<p class="font-body-md text-body-md">Atmospheric brilliance.</p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="md:col-span-1 group relative overflow-hidden h-[400px]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Detailed shot of an opulent balloon and floral styling for a birthday stage. High-gloss chrome balloons in gold and soft pastel pink are interwoven with white orchids and hydrangeas. The composition is asymmetrical and modern, set against a clean ivory backdrop. High-key lighting emphasizes the premium textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw8bto1_zbP-p5lArkvASTDmhOVGqGOeVzh1v0YRdLqLFSovmNeLS690MD3uBblbwOpqhxWO5or7T7jM9GvLrhnP_2-QwOYwAVbd12W11HsIzoXSP2EkGi91t-zOLRP00GSvPTBXHF5_yKGgaBUCsAC7yYexcZTA-GgK2QBrwWJ3c697YODwUeTGZpW-oBOG5bXJ-xaPyoHFxLg0m_BjIz_sVeRAjqi7epdq5dVCE94U7ZnSDoe-E9-SM34kT_S8epjSo72_sntfrB"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent flex flex-col justify-end p-6 text-white">
+<h3 class="font-label-caps text-label-caps uppercase tracking-widest mb-1">Floral Styling</h3>
+<p class="font-body-md text-body-md">Botanical elegance.</p>
+</div>
+</div>
+</div>
+<!-- Features List Icons -->
+<div class="mt-gutter grid grid-cols-2 md:grid-cols-4 gap-gutter py-12 border-y border-outline-variant/20">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary scale-110">magic_button</span>
+<span class="font-label-caps text-label-caps text-on-surface">Personalized Concepts</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary scale-110">music_note</span>
+<span class="font-label-caps text-label-caps text-on-surface">Entertainment &amp; Music</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary scale-110">family_restroom</span>
+<span class="font-label-caps text-label-caps text-on-surface">Family Experiences</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary scale-110">photo_camera</span>
+<span class="font-label-caps text-label-caps text-on-surface">Cinematic Media</span>
+</div>
+</div>
+</section>
+<!-- Editorial Split Section -->
+<section class="bg-surface-container-low py-16 md:py-section-padding overflow-hidden">
+<div class="px-6 md:px-margin-edge max-w-container-max-width mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 order-2 md:order-1">
+<div class="relative">
+<img class="w-full aspect-[4/5] object-cover rounded-lg shadow-xl" data-alt="A candid, cinematic moment of a happy family during a luxury birthday celebration. The setting is a bright, sunlit garden party with high-end decor. The family is dressed in elegant modern attire, laughing together. Soft light-mode aesthetic with pastel tones and ivory highlights. The image feels authentic, warm, and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Wh5jPJcj4EopRQaHnWzJPJwnk6GntxFWB0q_kpST47S9Xre1jIcDwbkYXWzv1DTDbED47BQP08VvmAOmJeT_N0xK1XHZN4jzeFOwxvGrNh8UgTvA_Kg7qk2w_mOMvos4KowIrKTZQsOpGCOx6xDh5IkLOUCxJlkQ6wbj6Y4m3gIoQy7tdHiUEaUYeztY5dIYSzlMAE8Hmj6rGoRsE9OW7k2Hqr098loen14cNEnRPcmeEyoqOytvqcGpCNuQLuqPxH5NpQzQay6u"/>
+<div class="absolute -bottom-12 -right-12 hidden lg:block w-72 h-72 glass-card p-6 rounded-lg shadow-2xl border border-white/20">
+<h4 class="font-headline-md text-headline-md text-primary mb-2">Heirloom Moments</h4>
+<p class="font-body-md text-body-md text-secondary">Captured with precision, remembered for a lifetime. Every laugh and embrace is treated as a masterpiece.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7 order-1 md:order-2 mb-16 md:mb-0">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.3em] uppercase block mb-6">The Experience</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface mb-8 leading-tight">Where Joy Meets Refined Sophistication</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-8 leading-relaxed">
+                        Our birthday planning services transcend the ordinary. We believe a celebration should be a reflection of your soulâ€”vibrant, elegant, and deeply personal. From the first sketch of the stage design to the final cinematic edit of your birthday film, Vivaha Vedika ensures a seamless, stress-free journey into your next chapter.
+                    </p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Stage &amp; Cake Table designs that serve as art installations.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Kids' zones that blend playful wonder with premium aesthetics.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">A curated list of global entertainment and culinary masters.</span>
+</li>
+</ul>
+<div class="flex items-center gap-8">
+<div class="h-[1px] w-12 bg-primary"></div>
+<p class="font-label-caps text-label-caps text-primary italic">"The Gold Standard of Celebrations"</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Cinematic Masonry Gallery -->
+<section class="py-16 md:py-section-padding px-6 md:px-margin-edge max-w-container-max-width mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface">The Cinematic Gallery</h2>
+<p class="font-body-md text-body-md text-secondary mt-4">A visual journey through our most cherished celebrations.</p>
+</div>
+<div class="columns-1 md:columns-2 lg:columns-3 gap-gutter space-y-gutter">
+<div class="relative overflow-hidden group">
+<img class="w-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Editorial photograph of an outdoor luxury birthday table setting at sunset. The palette is ivory, blush, and royal blue. High-end glassware and champagne gold cutlery glint in the warm golden hour light. The background is a lush, soft-focus garden. Professional cinematic lighting and composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg6hz78YxSVgjbt36Q6xVN2kQqNjxtQye5owDQ3FJ9IL_q6tnSBoJB8rsvsLl5vAkeGXXfxpLxjK4psZNQwlLLAcQnn9s2HnDz58h08V6X-DDFlNugS2dtfbNq-9gAnWNARcPkaHt-xrPFKv3Kq8pw8cdv8vdWPtr0QOE489RZWn3Cke5e20K8LeBA-jXfY25shvEY7zVy7mdKdj7EGA3ZrnSEzP7tP0ct3dNnmISoFpOUWivT2jVKNeT8BsdX5ss-7Hp0H277QmS8"/>
+</div>
+<div class="relative overflow-hidden group">
+<img class="w-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="A collection of designer birthday cupcakes and treats arranged on a tiered gold stand. The treats are decorated with delicate pastel icing and edible gold leaf. The lighting is soft and airy, creating a high-key light mode aesthetic. A background of ivory silk drapes provides a clean, premium feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp7_ZJl-0i3q5vdKlzfUjkztaxN5em5mTcQ5ynNRqlWgwwp6fVzV7tNkgMWyWHIsyoB0DjI_NSvqmaiMT9D852F1Dr3OsdXbFGO14NM9MEdP0yKw8hOXcK0MDujLkbh3GComvoV_IgPaWPKpPe-KS7jL33rmyhqeTnrnoeDXKTW0_wc0CpX99cfqmQQGWJ7IxlkqbZxhCtQQHqj8iaFEmQe0MybV2hX_YgpnGW-6tPIyl0GKE9IrWKY2xj0xPZ0fGz4bPhbd_jKlZP"/>
+</div>
+<div class="relative overflow-hidden group">
+<img class="w-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="High-angle shot of a vibrant dance floor during a luxury birthday celebration. Guests are in blurred motion, surrounded by professional event lighting in royal blue and warm amber. The mood is joyful, energetic, and cinematic, capturing the essence of a premium modern celebration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlGSegnDofdK6Qbr7NEQVBtGcvHU2NSwAOmQfoBM1L-0L2R_8oIjQrrWQFmaW9CotTNxW-TbSYl7rKqvYtRPFrS4IeLsdkXLCN-LBkiVYFD9SegTJJJBncZbOfMplUMXg8l39xzirGpjbDG4JquPX5VCRr3f3JExCzrFJ-HXzj0AM_dzm_kmWk5_O5_tMD1vpIWlw79xg7a6x6yvZuUncZqiT_v0hCKCZBmoGZOLejED9Gkl_HuhlgEzQFFNs5QKd_aYtJVp-Hfo4J"/>
+</div>
+<div class="relative overflow-hidden group">
+<img class="w-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="Detailed close-up of a birthday invitation and place card suite. The paper is heavy, textured ivory with gold foil letterpress. A single dried peony in blush pink rests on the side. The shot is minimalist, editorial, and sophisticated, emphasizing the tactile quality of a luxury event." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAntaujOuA4AxL70IdMjTJDFXBxvLdDh9ytu_YnDf7LZXWl7pzLHe0bipFH0SmygU2P8HXDMpuWiOn_8JKbYeMIJNirWpETxzDxNLJCJuGPUv6dY63EW1A-vHAp34Dk-lPX56o1qtKsR3U3ehr_3sKph8LwepdwhKUknFmbvuW68roRCI0X_V_vnECR-2kDqxkNnKTmuXilp1xTDePZnh094bU_6gr7yIiiusxbNgnvHA9PLdd-ZvbPfwlwRc7oWL_hYenTghwg1P08"/>
+</div>
+<div class="relative overflow-hidden group">
+<img class="w-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="A wide cinematic shot of a luxury birthday stage design. A massive wall of ivory roses and hydrangeas is framed by champagne gold architectural structures. Glowing LED lights accentuate the textures of the florals. In the center, a minimalist white stage awaits the highlight moment. The atmosphere is grand and regal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr9qhDBpQbYHDw-EMSgWqXinb905GPezlb0-cwYMP5guBO11Y_v2_kEcDTH4Qp7F8aSvnluScUdV0mdgMzJ4RmPOHI7zE2v7JYdq32wEknWHJ7gWTLn-oU3AjM8I8l-H-HEzPxYc8FjJVRbuKgRouhUlR4nAo1JGHgz8q48ee4yMIW2tBMWWdYFoS6G09XphenlJEgeL6EMkkXhBcqpT4IPq9Q7VYUBKHPOHDfrYhmnVAl0BkxiangbaA9RfjxyOs6QWxAjv45YFQd"/>
+</div>
+<div class="relative overflow-hidden group">
+<img class="w-full object-cover transition-transform duration-1000 group-hover:scale-110" data-alt="A joyful candid moment of guests raising champagne glasses during a birthday toast. The background is a wash of warm holiday lights and premium decor. The focus is on the sparkling champagne and the genuine smiles, captured with a professional shallow depth of field. Modern European luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQqswbPLeBS1FFopKevha4wDHibcK_xzs0QDWp5yJMCXX1JRcFLM9Uz0F172ltO_kHsECLL16Md9319azJGzf5p_NZ754ekL2GlOYhZ-4AKqkKQjM--SH2GHMXQVxm8hca-bXQek55CSUDlXl0l7GSRZfwwGX3VCV699uPM8OiwgUg2P_xpaM-Z41CgAzfDkrYw0ZFoT2uNyt4VtItMa9maLlfGnVgFQWWgW0dzfjQwgz1LapqR06EC9pt243W1GlOBwY_cvvP8yR_"/>
+</div>
+</div>
+<div class="flex justify-center mt-16">
+<button class="font-label-caps text-label-caps text-primary border-b border-primary hover:border-primary-container hover:text-primary-container transition-all pb-2 tracking-widest uppercase">View Complete Portfolio</button>
+</div>
+</section>
+<!-- Final CTA Gilded Section -->
+<section class="py-16 md:py-section-padding bg-surface-container text-center relative overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-[1px] bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
+<div class="max-w-3xl mx-auto px-6 md:px-margin-edge">
+<span class="font-label-caps text-label-caps text-primary mb-6 block">Your Legacy Starts Here</span>
+<h2 class="font-display-xl text-headline-md md:text-headline-lg md:text-display-xl text-on-surface mb-8">Ready to Design Your Heirloom Moment?</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-12">Let us bring your vision to life with the precision and passion it deserves. Together, we will create a celebration that will be whispered about for years to come.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-primary text-on-primary px-12 py-5 rounded-full font-label-caps text-label-caps hover:bg-primary-container transition-all duration-300 shadow-xl">Plan Your Celebration</button>
+<button class="bg-white border border-primary/20 text-on-surface px-12 py-5 rounded-full font-label-caps text-label-caps hover:bg-surface-variant transition-all duration-300">Book A Consult</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-16 md:py-section-padding bg-surface-container-low border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-margin-edge max-w-container-max-width mx-auto gap-gutter">
+<a href="Home.html" class="font-headline-md text-headline-md text-primary">Vivaha Vedika</a>
+<div class="flex gap-gutter my-8 md:my-0">
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Instagram</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Pinterest</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Privacy Policy</a>
+</div>
+<div class="text-primary font-body-md text-body-md">Â© 2024 Vivaha Vedika. The Cinematic Heirloom.</div>
+</div>
+</footer>
+
+
+</body></html>
+
+
+
+
+
+
+
+
+
+
